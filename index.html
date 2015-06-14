@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<title>Chezy Champs</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:600,500,400,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel="shortcut icon" href="files/favicon.ico" type="image/x-icon" />
+	<link rel='stylesheet' type='text/css' href='http://5c4cf848f6454dc02ec8-c49fe7e7355d384845270f4a7a0a7aa1.r53.cf2.rackcdn.com/css/b0d725a0cae752a4c8609ea4ed876831ef3b316a/files/home.css'/>
+	<link rel='stylesheet' href='http://5c4cf848f6454dc02ec8-c49fe7e7355d384845270f4a7a0a7aa1.r53.cf2.rackcdn.com/css/2c2aec65f865d6939fe0085b7c992d0f39db2635/files/font-awesome-4.3.0/css/font-awesome.min.css'/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<!--<link rel="stylesheet" type="text/css" href="files/scrolling-nav.css">
+	<script type="text/javascript" src="files/scrolling-nav.css"></script>
+	<script type="text/javascript" src="files/jquery.easing.min.css"></script>-->
+	<script type="text/javascript">
+
+		$(function() {
+	    	$('a[href*=#]:not([href=#])').click(function() {
+			    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+			        || location.hostname == this.hostname) {
+
+			        var target = $(this.hash);
+			        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			           if (target.length) {
+			             $('html,body').animate({
+			                 scrollTop: target.offset().top
+			            }, 1000);
+			            return false;
+			        }
+			    }
+			});
+		});
+
+		function isScrolledIntoView(elem) {
+		    var $elem = $(elem);
+		    var $window = $(window);
+
+		    var docViewTop = $window.scrollTop();
+		    var docViewBottom = docViewTop + $window.height();
+
+		    var elemTop = $elem.offset().top;
+		    var elemBottom = elemTop + $elem.height();
+
+		    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+		}
+
+		window.onscroll=function() {
+
+			if(isScrolledIntoView(".header-text")) {
+				$('#nav-home').addClass('active');
+				$('#nav-about').removeClass('active');
+				$('#nav-info').removeClass('active');
+				$('#nav-webcast').removeClass('active');
+			}
+
+			if(isScrolledIntoView(".about-text")) {
+				$('#nav-about').addClass('active');
+				$('#nav-home').removeClass('active');
+				$('#nav-info').removeClass('active');
+				$('#nav-webcast').removeClass('active');
+			}
+
+			if(isScrolledIntoView(".info-text")) {
+				$('#nav-info').addClass('active');
+				$('#nav-home').removeClass('active');
+				$('#nav-about').removeClass('active');
+				$('#nav-webcast').removeClass('active');
+			}
+
+			if(isScrolledIntoView(".webcast-text")) {
+				$('#nav-webcast').addClass('active');
+				$('#nav-home').removeClass('active');
+				$('#nav-info').removeClass('active');
+				$('#nav-about').removeClass('active');
+			}
+
+			var height=$(window).scrollTop();
+			height=height/5-80;y=-height-10;
+			var button=y.toString();
+			var z=button+"px";
+			var scroll=height.toString();
+			var x=scroll+"px";
+			console.log(x);
+			console.log(z);document.getElementById("parallax").style.backgroundPosition =  "0px " + x;
+
+		};
+
+	</script>
+</head>
+
+<body>
+
+	<div class="main-continer">
+
+		<nav class="navbar navbar-default">
+		  <div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="#">
+		        <img src="http://5c4cf848f6454dc02ec8-c49fe7e7355d384845270f4a7a0a7aa1.r53.cf2.rackcdn.com/files/61b3dbe562dab82ba205c6d50c41be2e52de0871/chezy-logo.svg" height="60px">
+		      </a>
+		    </div>
+
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse in" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav">
+		        <li class="active" id="nav-home"><a href="#home">HOME</a></li>
+		        <li id="nav-about"><a href="#about">ABOUT</a></li>
+		        <li id="nav-info"><a href="#info">INFORMATION</a></li>
+		        <li id="nav-webcast"><a href="#webcast">WEBCAST</a></li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+
+		<div class="placeholder" id="home"></div>
+		<div class="header">
+			<div class="header-img" id="parallax"></div>
+			<div class="header-text">
+				CHEZY CHAMPS
+			</div>
+			<div class="header-divider"></div>
+			<div class="header-blurb">
+				<i>The best in the west</i>
+			</div>
+		</div>
+
+		<div class="placeholder" id="about"></div>
+		<div class="about">
+			<div class="about-header">ABOUT</div>
+			<div class="about-text">
+				Chezy Champs is an annual off-season FIRST robotics tournament hosted by Team 254. The tournament takes place in late August, at Bellarmine College Preparatory in San Jose, California.  This fall, Team 254 is hosting the second annual Chezy Champs, a premiere off-season FIRST Robotics competition event. 38 teams will come together in San Jose to battle it out to determine the best in the west.
+			</div>
+			<div class="badge-container">
+				<div class="badge-icon"><p class="number">38</p><p class="text">Teams</p></div>
+				<div class="badge-icon"><p class="number">2</p><p class="text">Days</p></div>
+				<div class="badge-icon"><p class="number">###</p><p class="text">People</p></div>
+			</div>
+			<!-- <div class="button-container">
+				<a href="http://team254.com/"><div class="button">Visit Team 254's website</div></a>
+			</div> -->
+		</div>
+
+		<div class="placeholder" id="info"></div>
+		<div class="info-container">
+			<div class="info">
+				<div class="info-header">INFORMATION</div>
+				<div class="info-text">
+					Chezy Champs features an entertaining show, competent volunteers, and a focus on the team experience.  There will also be 254-style photo shoots for all robots Friday evening, Food trucks, Blue banners and awesome trophies, and rule changes that go further than IRI in fixing Recycle Rush.
+					<p class="thin-text" style="padding-top: 40px;"><span class="bold-text">When: </span>Saturday and Sunday, September 19-20, 2015</p>
+					<p class="thin-text"><span class="bold-text">Where: </span>Bellarmine College Preparatory, San Jose, California</p>
+					<p class="thin-text"><span class="bold-text">Registration: </span>$300 ($600 for field-side pit)</p>
+					<p class="thin-text"><span class="bold-text">Capacity: </span>38 teams</p>
+				</div>
+				
+			</div>
+			<div class="link-container">
+				<div class="link" style="margin-top: 10px;">
+					<div class="link-header">Apply Here</div>
+					<div class="link-text">Apply for Chezy Champs using this form.  Selections will be made based on criteria that include competitiveness, locality, and other factors.
+					</div>
+					<a href="https://docs.google.com/forms/d/1rCjyS2bpbSucszAD6B4DVpMQjOaQ3EMTS55cfevTowE/viewform">
+						<div class="button-container">
+							<div class="button-inverted">
+								Application Form &nbsp;
+								<i class="fa fa-chevron-right"></i>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="link" style="border-bottom-style:none">
+					<div class="link-header">Volunteer Signups</div>
+					<div class="link-text">We need many volunteers to make Chezy Champs a success! If you are interested in volunteering, please fill out this form.</div>
+					<a href="https://docs.google.com/forms/d/1Bf4MjDKllKHRS-rVSo03FC16jSD04FFf4N5A9KRS5dE/viewform">
+						<div class="button-container">
+							<div class="button-inverted">
+								Volunteer Form &nbsp;
+								<i class="fa fa-chevron-right"></i>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="placeholder" id="webcast"></div>
+		<div class="webcast">
+			<div class="webcast-header">WEBCAST</div>
+			<!-- <iframe name="stack" src="http://www.twitch.tv/gamesense/embed" frameborder="0" scrolling="no" height="500" width="100%"></iframe> -->
+			<div class="webcast-text">
+				Chezy Champs will be livestreamed on this page.  Check back on September 19th and 20th to watch!
+			</div>
+
+			<div id="countdown" class="webcast-timer"></div>
+
+			<script type="text/javascript">
+				// set the date we're counting down to
+				var target_date = new Date("Sep 19, 2015").getTime();
+				 
+				// variables for time units
+				var days, hours, minutes, seconds;
+				 
+				// get tag element
+				var countdown = document.getElementById("countdown");
+				 
+				// update the tag with id "countdown" every 1 second
+				setInterval(function () {
+				 
+				    // find the amount of "seconds" between now and target
+				    var current_date = new Date().getTime();
+				    var seconds_left = (target_date - current_date) / 1000;
+				 
+				    // do some time calculations
+				    days = parseInt(seconds_left / 86400);
+				    seconds_left = seconds_left % 86400;
+				     
+				    hours = parseInt(seconds_left / 3600);
+				    seconds_left = seconds_left % 3600;
+				     
+				    minutes = parseInt(seconds_left / 60);
+				    seconds = parseInt(seconds_left % 60);
+				     
+				    // format countdown string + set tag value
+				    countdown.innerHTML = days + "d " + hours + "h "
+				    + minutes + "m " + seconds + "s";  
+				 
+				}, 1000);
+			</script>	
+			
+			
+			<!-- <div class="button-container">
+				<a href="http://team254.com/"><div class="button">Visit Team 254's website</div></a>
+			</div> -->
+		</div>
+
+		<div class="footer">
+			<div class="social-container">
+				<a href="https://twitter.com/team254/">
+					<div class="social-btn">
+						<img class="twitter" src="http://5c4cf848f6454dc02ec8-c49fe7e7355d384845270f4a7a0a7aa1.r53.cf2.rackcdn.com/files/240453163a398f8664597572b7de1f7857be5acd/twitter.png" width="30px">
+					</div>
+				</a>
+				<a href="https://www.facebook.com/team254robotics">
+					<div class="social-btn" style="padding-top:11px">
+						<img class="facebook" src="http://5c4cf848f6454dc02ec8-c49fe7e7355d384845270f4a7a0a7aa1.r53.cf2.rackcdn.com/files/e260c3e91e5275903b856b42facb89bcf704ecc5/facebook.png" height="30px">
+					</div>
+				</a>
+				<a href="http://www.thebluealliance.com/event/2015cc">
+					<div class="social-btn" style="padding-top:11px">
+						<img class="blue-alliance" src="http://5c4cf848f6454dc02ec8-c49fe7e7355d384845270f4a7a0a7aa1.r53.cf2.rackcdn.com/files/d6eaf4ed196d5215e2425a9d5464c7ad43232ffb/bluealliance.png" height="30px">
+					</div>
+				</a>
+			</div>
+
+			<div class="footer-links">
+				<a href="https://docs.google.com/forms/d/1rCjyS2bpbSucszAD6B4DVpMQjOaQ3EMTS55cfevTowE/viewform"><span class="footer-link">TEAM APPLICATION</span></a>
+				<a href="https://docs.google.com/forms/d/1Bf4MjDKllKHRS-rVSo03FC16jSD04FFf4N5A9KRS5dE/viewform"><span class="footer-link">VOLUNTEER SIGNUP</span></a>
+				<a href="http://www.chiefdelphi.com/forums/showthread.php?t=137315"><span class="footer-link">CHIEF DELPHI</span></a>
+				<a href="http://www.team254.com"><span class="footer-link">TEAM 254</span></a>
+			</div>
+
+		
+			
+		</div>
+
+	</div>
+
+</body>
+
+</html>
