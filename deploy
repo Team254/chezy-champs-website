@@ -1,0 +1,1 @@
+rsync -a . team254@chezychamps.team254.com:/opt/team254/chezy-champs-website
