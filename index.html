@@ -16,29 +16,41 @@
 	<script type="text/javascript">
 		function toggleHidden() {
 			var el = $('.rule-changes');
-			el.height("auto");
-    		curHeight = el.height();
-    		$('#extra p').toggleClass('hidden');
-    		autoHeight = el.height();
-    		if($('#extra p').hasClass('hidden')) {
-    			console.log("hidden");
-    			$('#extra p').removeClass('hidden');
-    			el.height(curHeight).animate({height: autoHeight}, 1000);
-    			setTimeout(
-				  function() 
-				  {
-				    $('#extra p').addClass('hidden');
-				  }, 1000);	
-	    		}
-    		else {
-    			el.height(curHeight).animate({height: autoHeight}, 1000);
-    		}
+			if ($("#toggle").html() == " Read More") {
+				console.log("open");
+				el.height("auto");
+				autoHeight = el.height();
+				el.height("49vw").animate({height: autoHeight}, 1000);
+			}
+			else {
+				autoHeight = el.height();
+				el.height(autoHeight).animate({height: "49vw"}, 1000);
+			}
+
+			// var el = $('.rule-changes');
+			// el.height("auto");
+   //  		curHeight = el.height();
+   //  		$('#extra p').toggleClass('hidden');
+   //  		autoHeight = el.height();
+   //  		if($('#extra p').hasClass('hidden')) {
+   //  			console.log("hidden");
+   //  			$('#extra p').removeClass('hidden');
+   //  			el.height("49vw").animate({height: "auto"}, 1000);
+   //  			setTimeout(
+			// 	  function() 
+			// 	  {
+			// 	    $('#extra p').addClass('hidden');
+			// 	  }, 1000);	
+	  //   		}
+   //  		else {
+   //  			el.height(curHeight).animate({height: autoHeight}, 1000);
+   //  		}
 			
 
 			if ($("#toggle").html() == " Read More") 
-				$(".rule-changes .social-container").html("<i class=\"fa fa-angle-double-up\"></i><span id=\"toggle\"> Read Less</span>");
+				$(".rule-holder .social-container").html("<i class=\"fa fa-angle-double-up\"></i><span id=\"toggle\"> Read Less</span>");
 			else
-				$(".rule-changes .social-container").html("<i class=\"fa fa-angle-double-down\"></i><span id=\"toggle\"> Read More</span>");
+				$(".rule-holder .social-container").html("<i class=\"fa fa-angle-double-down\"></i><span id=\"toggle\"> Read More</span>");
 		}
 
 		$(function() {
@@ -281,13 +293,14 @@
 					<p>6. One alliance's litter may not contact anything on the other alliance's side of the field. Violation: Yellow card.</p>
 					<p>7. Litter may be introduced over the alliance station wall at any point during the teleoperated period.</p>
 					<p>8. Causing yellow totes to transfer to the other side of the field while attempting to coopertate will not result in a foul.</p>
-					<span id="extra">
-						<p class="hidden">9. Yellow totes are counted as gray totes when scored on the scoring platform, during the entire tournament.</p>
-						<p class="hidden">10. Playoff rounds are head-to-head, best of three, using the 2014 bracket structure.</p>
-						<p class="hidden">11. Any number of alliance members may be within the human player zone during the teleoperated period.</p>
-						<p class="hidden">12. Alliance members may contact the chute door and totes simultaneously.</p>
-						<p class="hidden">13. Teams must be able to demonstrate, if asked by the head referee, that their robot fits within the TRANSPORT CONFIGURATION, but may transport their robot however they see fit.</p>
-					</span>
+					<p>9. Yellow totes are counted as gray totes when scored on the scoring platform, during the entire tournament.</p>
+					<p>10. Playoff rounds are head-to-head, best of three, using the 2014 bracket structure.</p>
+					<p>11. Any number of alliance members may be within the human player zone during the teleoperated period.</p>
+					<p>12. Alliance members may contact the chute door and totes simultaneously.</p>
+					<p>13. Teams must be able to demonstrate, if asked by the head referee, that their robot fits within the TRANSPORT CONFIGURATION, but may transport their robot however they see fit.</p>
+					
+				</div>
+				<div class="rule-holder">
 					<a style="cursor:pointer" onclick="toggleHidden()" class="social-container">
 						<i class="fa fa-angle-double-down"></i>
 						<span id="toggle"> Read More</span>
@@ -355,7 +368,7 @@
 					<img src="http://www.infiniteunknown.net/wp-content/uploads/2010/02/bae-systems.jpg" width="100%">
 				</div>
 				<div class="sponsor-column">
-					<div class="sponsor-logo">
+					<div class="sponsor-logos">
 						<img src="http://www.corporatewatch.org.uk/sites/default/files/BAE-logo.jpg" width="100%">
 					</div>
 					<p class="sponsor-title">SPONSOR TITLE</p>
@@ -369,9 +382,9 @@
 				</div>
 			</div>
 
-			<div class="sponsor-row" style="height:450px">
+			<div class="sponsor-row taller">
 				<div class="sponsor-column">
-					<div class="sponsor-logo">
+					<div class="sponsor-logos">
 						<img src="http://www.socalgreenrealestateblog.com/wp-content/uploads/2015/03/NASA-logo.png" width="40%">
 					</div>
 					<p class="sponsor-title">SPONSOR TITLE</p>

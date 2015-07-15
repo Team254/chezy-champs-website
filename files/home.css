@@ -348,7 +348,12 @@
 	display: block;
 }
 
-.rule-changes>.social-container {
+.rule-holder {
+	text-align: center;
+	padding-left: 35%;
+}
+
+.rule-holder>.social-container {
 	font-size: 18px;
 	color: #2980b9;
 	font-family: 'Open Sans Light', sans-serif; 
@@ -404,7 +409,7 @@ a:focus, a:hover {
 	margin-top: 30px;
 	width: 64%;
 	display: inline-block;
-	height: auto;
+	height: 49vw;
 	overflow: hidden;
 }
 
@@ -563,6 +568,10 @@ a:focus, a:hover {
 	height: 400px;
 }
 
+.taller {
+	height:450px
+}
+
 .sponsor-column {
 	width: 50%;
 	display: inline-block;
@@ -572,11 +581,12 @@ a:focus, a:hover {
 	height: 100%;
 }
 
-.sponsor-logo {
+.sponsor-logos {
 	width: 60%;
 	margin-left: 20%;
 	margin-top: 50px;
 	text-align: center;
+	display: block!important;
 }
 
 .sponsor-title {
@@ -1031,6 +1041,57 @@ a:focus, a:hover {
 	.blue-alliance {
 		height: 38px;
 		margin-top: 3px;
+	}
+
+	.rule-changes>p {
+		font-size: 19px;
+		line-height: 35px;
+	}
+
+	.deadlift>p {
+		font-size: 17px;
+		line-height: 30px;
+	}
+
+	.rule-holder {
+		display: none;
+	}
+
+	.sponsor-img-container {
+		height: 690px;
+	}
+
+	.sponsor-img {
+		height: 700px;
+	}
+
+	.sponsor-header {
+		font-size: 65px;
+		margin-top: -520px;
+	}
+
+	.sponsor-title {
+		font-size: 30px;
+		margin-top: 40px;
+	}
+
+	.sponsor-blurb {
+		font-size: 18px;
+		width: 72%;
+		margin-left: 14%;
+	}
+
+	.sponsor-row {
+		height: 520px;
+	}
+
+	.button-border {
+		font-size: 17px;
+		margin: 35px 0;
+	}
+
+	.taller {
+		height: 600px;
 	}
 
 }
