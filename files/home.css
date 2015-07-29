@@ -832,8 +832,12 @@ a:focus, a:hover {
 		font-size: 45px;
 	}
 
-	.about-header, .info-header, .webcast-header {
+	.about-header, .info-header, .webcast-header, .rules-header {
 		font-size: 115px;
+	}
+
+	.rules-header {
+		margin-left: 0
 	}
 
 	.about-text, .info-text, .webcast-text {
@@ -931,6 +935,71 @@ a:focus, a:hover {
 		padding: 30px;
 	}
 
+	.deadlift {
+		display: none;
+	}
+
+	.rule-changes {
+		width: 100%;
+	}
+
+	.rule-changes > p {
+		line-height: 1.8;
+		font-size: 20px;
+	}
+
+	.rule-changes {
+		height: auto;
+	}
+
+	.rule-holder {
+		display: none;
+	}
+
+	.sponsor-img-container {
+		height: 640px;
+	}
+
+	.sponsor-img {
+		height: 650px;
+	}
+
+	.sponsor-header {
+		font-size: 115px;
+		margin-top: -500px
+	}
+
+	.sponsor-text {
+		font-size: 40px;
+		line-height: 1.4;
+		margin-top: -325px;
+	}
+
+	.for-sponsor-picture {
+		display: none;
+	}
+
+	.sponsor-column {
+		width: 100%;
+	}
+
+	.sponsor-title {
+		font-size: 50px;
+	}
+
+	.sponsor-text {
+		font-size: 30px;
+	}
+
+	.sponsor-row {
+		height: auto!important
+	}
+
+	.button-border {
+		font-size: 25px;
+	}
+
+
 }
 
 @media (min-width: 1450px) {
@@ -967,7 +1036,7 @@ a:focus, a:hover {
 		font-size: 28px;
 	}
 
-	.about-header, .info-header, .webcast-header {
+	.about-header, .info-header, .webcast-header, .rules-header {
 		font-size: 70px;
 	}
 
@@ -1092,6 +1161,11 @@ a:focus, a:hover {
 
 	.taller {
 		height: 600px;
+	}
+
+	.sponsor-text {
+		margin-top: -270px;
+		font-size: 20px;
 	}
 
 }
