@@ -630,6 +630,38 @@ a:focus, a:hover {
 	background-color: #eee;
 }
 
+.schedule-container {
+	background-color: #aaa;
+	width: 100%;
+	padding: 50px 0px;
+	background-size: 100% auto;
+}
+
+.schedule-header {
+    color: #333;
+    font-size: 55px;
+    width: 86%;
+    margin-left: 7%;
+    font-family: 'Open Sans Light', sans-serif;
+    font-weight: 300;
+}
+
+.schedule-text {
+    color: #333;
+    font-size: 16px;
+    font-family: 'Open Sans Light', sans-serif;
+    width: 86%;
+    margin-left: auto;
+}
+
+.schedule-table th {
+	color: #fff;
+	font-weight: 9000;
+}
+
+.schedule-table td {
+	padding: 0px 10px;
+}
 
 @media (max-width: 1000px) {
 	.navbar-nav {
@@ -1167,6 +1199,4 @@ a:focus, a:hover {
 		margin-top: -270px;
 		font-size: 20px;
 	}
-
 }
-

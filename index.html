@@ -92,7 +92,7 @@
 				$('#nav-info').removeClass('active');
 				$('#nav-sponsors').removeClass('active');
 				$('#nav-webcast').removeClass('active');
-
+				$('#nav-schedule').removeClass('active');
 			}
 
 			if(isScrolledIntoView(".about-text")) {
@@ -102,7 +102,7 @@
 				$('#nav-info').removeClass('active');
 				$('#nav-sponsors').removeClass('active');
 				$('#nav-webcast').removeClass('active');
-
+				$('#nav-schedule').removeClass('active');
 			}
 
 			if(isScrolledIntoView(".info-text")) {
@@ -112,7 +112,17 @@
 				$('#nav-about').removeClass('active');
 				$('#nav-sponsors').removeClass('active');
 				$('#nav-webcast').removeClass('active');
+				$('#nav-schedule').removeClass('active');
+			}
 
+			if(isScrolledIntoView(".schedule-text")) {
+				$('#nav-rules').removeClass('active');
+				$('#nav-info').removeClass('active');
+				$('#nav-schedule').addClass('active');
+				$('#nav-home').removeClass('active');
+				$('#nav-about').removeClass('active');
+				$('#nav-sponsors').removeClass('active');
+				$('#nav-webcast').removeClass('active');
 			}
 
 			if(isScrolledIntoView(".rules-header")) {
@@ -122,7 +132,7 @@
 				$('#nav-about').removeClass('active');
 				$('#nav-sponsors').removeClass('active');
 				$('#nav-webcast').removeClass('active');
-
+				$('#nav-schedule').removeClass('active');
 			}
 
 			if(isScrolledIntoView(".sponsor-text")) {
@@ -132,7 +142,7 @@
 				$('#nav-info').removeClass('active');
 				$('#nav-about').removeClass('active');
 				$('#nav-webcast').removeClass('active');
-
+				$('#nav-schedule').removeClass('active');
 			}
 
 			if(isScrolledIntoView(".webcast-text")) {
@@ -142,6 +152,7 @@
 				$('#nav-info').removeClass('active');
 				$('#nav-about').removeClass('active');
 				$('#nav-webcast').addClass('active');
+				$('#nav-schedule').removeClass('active');
 			}
 
 			if(window.mobileAndTabletcheck) {
@@ -191,6 +202,7 @@
 		      	<li id="nav-home"><a href="#home">HOME</a></li>
 		        <li id="nav-about"><a href="#about">ABOUT</a></li>
 		        <li id="nav-info"><a href="#info">INFORMATION</a></li>
+		        <li id="nav-schedule"><a href="#schedule">SCHEDULE</a></li>
 		        <li id="nav-rules"><a href="#rules">RULE CHANGES</a></li>
 		        <!-- <li id="nav-sponsors"><a href="#sponsors">SPONSORS</a></li> -->
 		        <!-- <li id="nav-sponsors"><a href="#webcast">WEBCAST</a></li> -->
@@ -244,20 +256,6 @@
 				
 			</div>
 			<div class="link-container">
-				<div class="link" style="margin-top: 10px;">
-					<div class="link-header">Apply Here</div>
-					<div class="link-text">Apply for Chezy Champs using this form.  Selections will be made based on criteria that include competitiveness, locality, and other factors.
-					</div>
-					<a href="https://docs.google.com/forms/d/1rCjyS2bpbSucszAD6B4DVpMQjOaQ3EMTS55cfevTowE/viewform">
-						<div class="button-container">
-							<div class="button-inverted">
-								Application Form &nbsp;
-								<i class="fa fa-chevron-right"></i>
-							</div>
-						</div>
-					</a>
-				</div>
-
 				<div class="link" style="border-bottom-style:none">
 					<div class="link-header">Volunteer Signups</div>
 					<div class="link-text">We need many volunteers to make Chezy Champs a success! If you are interested in volunteering, please fill out this form.</div>
@@ -270,6 +268,102 @@
 						</div>
 					</a>
 				</div>
+			</div>
+		</div>
+
+		<div class="placeholder" id="schedule"></div>
+		<div class="schedule-container">
+			<div class="schedule">
+				<div class="schedule-header">SCHEDULE</div>
+				<table class="schedule-text">
+					<tr>
+						<td>
+							<table class="schedule-table">
+								<tr>
+									<th colspan="2">Friday, September 18</th>
+								</tr>
+								<tr>
+									<td>6-9pm</td>
+									<td>Team Load-in</td>
+								</tr>
+								<tr>
+									<td>7-9pm</td>
+									<td>Practice Matches</td>
+								</tr>
+							</table>
+						</td>
+						<td>
+							<table class="schedule-table">
+								<tr>
+									<th colspan="2">Saturday, September 19</th>
+								</tr>
+								<tr>
+									<td>8am</td>
+									<td>Venue Opens</td>
+								</tr>
+								<tr>
+									<td>9-9:30am</td>
+									<td>Driver Meeting</td>
+								</tr>
+								<tr>
+									<td>9:30-10am</td>
+									<td>Opening Ceremonies</td>
+								</tr>
+								<tr>
+									<td>10am-12pm</td>
+									<td>Qualification Matches</td>
+								</tr>
+								<tr>
+									<td>12-1pm</td>
+									<td>Lunch Break</td>
+								</tr>
+								<tr>
+									<td>1-6pm</td>
+									<td>Qualification Matches</td>
+								</tr>
+								<tr>
+									<td>6:30pm</td>
+									<td>Venue Closes</td>
+								</tr>
+							</table>
+						</td>
+						<td>
+							<table class="schedule-table" style="float: clear;">
+								<tr>
+									<th colspan="2">Sunday, September 20</th>
+								</tr>
+								<tr>
+									<td>9am</td>
+									<td>Venue Opens</td>
+								</tr>
+								<tr>
+									<td>9:30-10am</td>
+									<td>Opening Ceremonies</td>
+								</tr>
+								<tr>
+									<td>10-11am</td>
+									<td>Qualification Matches</td>
+								</tr>
+								<tr>
+									<td>11:30am-12pm</td>
+									<td>Alliance Selection</td>
+								</tr>
+								<tr>
+									<td>12-1pm</td>
+									<td>Lunch Break</td>
+								</tr>
+								<tr>
+									<td>1-4:30pm</td>
+									<td>Elimination Matches &amp; Closing Ceremonies</td>
+								</tr>
+								<tr>
+									<td>6pm</td>
+									<td>Venue Closes</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
 			</div>
 		</div>
 
