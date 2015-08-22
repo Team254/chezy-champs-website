@@ -675,7 +675,7 @@ a:focus, a:hover {
 		margin-top: 26px;
 	}
 	.navbar-default .navbar-collapse, .navbar-default .navbar-form {
-		margin-top: 42px;
+		margin-top: 20px;
 		width: 100vw;
 		margin-left: -15px;
 	}
