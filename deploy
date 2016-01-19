@@ -1,1 +1,12 @@
-rsync -a . team254@chezychamps.team254.com:/opt/team254/chezy-champs-website
+#!/usr/bin/env bash
+set -e
+
+USER=team254
+HOST=ec2.team254.com
+APP=chezy-champs-website
+
+echo "Deploying $APP from Git master branch..."
+echo
+ssh $USER@$HOST "cd /opt/sites/$APP && git checkout -f && git pull"
+echo
+echo "Deployed $APP."
