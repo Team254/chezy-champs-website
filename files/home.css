@@ -61,7 +61,7 @@
 }
 
 .header-img {
-	background-image: url(//media.team254.com/web/chezy-champs/header.jpg);
+	background-image: url(https://media.team254.com/web/chezy-champs/header.jpg);
 	background-size: cover;
   	-webkit-filter: blur(5px) brightness(70%);
     filter: blur(5px) brightness(70%);
@@ -94,9 +94,9 @@
 }
 
 .header-blurb {
-	margin-top: -185px;
+	margin-top: -180px;
     color: #fff;
-    font-size: 22px;
+    font-size: 28px;
     width: 100%;
     text-align: center;
     position: absolute;
@@ -140,7 +140,7 @@
 	width: 100%;
 	display: block;
 	margin-top: 2%;
-	text-align: center;
+	text-align: left;
 }
 
 .button {
@@ -263,17 +263,35 @@
 	font-weight: 300;
 }
 
-.map img {
-	border: 3px solid black;
-	margin: 3% 0 3% 7%;
-	width: 50%;
+.map {
+	background-color: #fff;
+	width: 100%;
+	padding: 60px;
+	padding-bottom: 100px;
 }
+
+.map img {
+	width: 45%;
+}
+
+.link-text.black {
+	color: #333;
+	font-size: 16px;
+	padding-top: 10px
+}
+
+.link-header.black {
+	font-weight: normal;
+	color: #333;
+}
+
+
 .map-blurb {
-	width: 33%;
+	width: 55%;
+	padding: 0 0 0 80px;
 	float: right;
-	margin: 3% 7% 3% 0;
 	font-family: 'Open Sans Light', sans-serif; 
-	font-size: 1.4em;
+	font-size: 18px;
 }
 .map-header {
     font-size: 55px;
@@ -281,7 +299,7 @@
 	font-family: 'Open Sans', sans-serif; 
 	font-weight: 300;
 	text-align: left;
-	margin-bottom: 5%;
+	padding-bottom: 30px;
 }
 
 .button-inverted {
@@ -298,7 +316,7 @@
 	border-style: solid;
 	border-color: #fff;
 	border-width: 2px;
-	margin: 25px 0;
+	margin: 15px 0 20px 0;
 	transition: background-color 0.25s, color 0.25s;
 }
 
@@ -327,6 +345,10 @@
 	width: 100%;
 	padding: 60px;
 	padding-bottom: 100px;
+}
+
+.white {
+	background-color: #fff;
 }
 
 .webcast-header {
@@ -551,7 +573,7 @@ a:focus, a:hover {
 	width: 104%;
 	margin-left: -2%;
 	margin-top: -5px;
-	background-image: url(//media.team254.com/web/chezy-champs/sponsors.jpg);
+	background-image: url(https://media.team254.com/web/chezy-champs/sponsors.jpg);
 	background-size: 110% auto;
 	height: 500px;
 	background-position: 0 -120px;
@@ -593,7 +615,7 @@ a:focus, a:hover {
 	overflow: hidden;
 	margin-left: 0%;
 	height: 300px;
-	border-bottom: 3px solid #bbb;
+	/*border-bottom: 3px solid #bbb;*/
 }
 
 .sponsor-row.shorter {

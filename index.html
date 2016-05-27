@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
 	<title>Chezy Champs</title>
-	<link href='//fonts.googleapis.com/css?family=Open+Sans:600,500,400,300' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:600,500,400,300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 	<link rel="shortcut icon" href="files/favicon.ico" type="image/x-icon" />
 	<link rel="stylesheet" type="text/css" href="files/home.css">
@@ -93,6 +93,7 @@
 				$('#nav-sponsors').removeClass('active');
 				$('#nav-webcast').removeClass('active');
 				$('#nav-schedule').removeClass('active');
+				$('#nav-map').removeClass('active');
 			}
 
 			if(isScrolledIntoView(".about-text")) {
@@ -103,6 +104,7 @@
 				$('#nav-sponsors').removeClass('active');
 				$('#nav-webcast').removeClass('active');
 				$('#nav-schedule').removeClass('active');
+				$('#nav-map').removeClass('active');
 			}
 
 			if(isScrolledIntoView(".info-text")) {
@@ -113,6 +115,7 @@
 				$('#nav-sponsors').removeClass('active');
 				$('#nav-webcast').removeClass('active');
 				$('#nav-schedule').removeClass('active');
+				$('#nav-map').removeClass('active');
 			}
 
 			// if(isScrolledIntoView(".schedule-text")) {
@@ -123,6 +126,7 @@
 			// 	$('#nav-about').removeClass('active');
 			// 	$('#nav-sponsors').removeClass('active');
 			// 	$('#nav-webcast').removeClass('active');
+			//	$('#nav-map').removeClass('active');
 			// }
 
 			// if(isScrolledIntoView(".rules-header")) {
@@ -131,29 +135,43 @@
 			// 	$('#nav-home').removeClass('active');
 			// 	$('#nav-about').removeClass('active');
 			// 	$('#nav-sponsors').removeClass('active');
+			//	$('#nav-map').removeClass('active');
 			// 	$('#nav-webcast').removeClass('active');
 			// 	$('#nav-schedule').removeClass('active');
 			// }
 
-			if(isScrolledIntoView(".sponsor-text")) {
+			// if(isScrolledIntoView(".sponsor-text")) {
+			// 	$('#nav-rules').removeClass('active');
+			// 	$('#nav-sponsors').addClass('active');
+			// 	$('#nav-home').removeClass('active');
+			// 	$('#nav-info').removeClass('active');
+			// 	$('#nav-about').removeClass('active');
+			// 	$('#nav-webcast').removeClass('active');
+			//	$('#nav-map').removeClass('active');
+			// 	$('#nav-schedule').removeClass('active');
+			// }
+
+			if(isScrolledIntoView(".map-text")) {
 				$('#nav-rules').removeClass('active');
-				$('#nav-sponsors').addClass('active');
+				$('#nav-sponsors').removeClass('active');
 				$('#nav-home').removeClass('active');
 				$('#nav-info').removeClass('active');
 				$('#nav-about').removeClass('active');
 				$('#nav-webcast').removeClass('active');
 				$('#nav-schedule').removeClass('active');
+				$('#nav-map').addClass('active');
 			}
 
-			// if(isScrolledIntoView(".webcast-text")) {
-			// 	$('#nav-rules').removeClass('active');
-			// 	$('#nav-sponsors').removeClass('active');
-			// 	$('#nav-home').removeClass('active');
-			// 	$('#nav-info').removeClass('active');
-			// 	$('#nav-about').removeClass('active');
-			// 	$('#nav-webcast').addClass('active');
-			// 	$('#nav-schedule').removeClass('active');
-			// }
+			if(isScrolledIntoView(".webcast-text")) {
+				$('#nav-rules').removeClass('active');
+				$('#nav-sponsors').removeClass('active');
+				$('#nav-home').removeClass('active');
+				$('#nav-info').removeClass('active');
+				$('#nav-about').removeClass('active');
+				$('#nav-webcast').addClass('active');
+				$('#nav-map').removeClass('active');
+				$('#nav-schedule').removeClass('active');
+			}
 
 			if(window.mobileAndTabletcheck) {
 
@@ -192,7 +210,7 @@
 		        <span class="icon-bar"></span>
 		      </button>
 		      <a class="navbar-brand" href="#">
-		        <img src="//media.team254.com/web/chezy-champs/chezy-logo.svg" height="60px">
+		        <img src="https://media.team254.com/web/chezy-champs/chezy-logo.svg" height="60px">
 		      </a>
 		    </div>
 
@@ -202,10 +220,11 @@
 		      	<li id="nav-home"><a href="#home">HOME</a></li>
 		        <li id="nav-about"><a href="#about">ABOUT</a></li>
 		        <li id="nav-info"><a href="#info">INFORMATION</a></li>
+		        <li id="nav-map"><a href="#map">MAP</a></li>
 		        <!-- <li id="nav-schedule"><a href="#schedule">SCHEDULE</a></li> -->
 		        <!-- <li id="nav-rules"><a href="#rules">RULE CHANGES</a></li> -->
-		        <li id="nav-sponsors"><a href="#sponsors">SPONSORS</a></li>
-		        <!--<li id="nav-sponsors"><a href="https://www.thebluealliance.com/gameday#layout=0&view_0=2015cc-1" target="_blank">WEBCAST &nbsp; <i class="fa fa-external-link"></i></a></li>-->
+		        <!-- <li id="nav-sponsors"><a href="#sponsors">SPONSORS</a></li> -->
+		        <li id="nav-webcast"><a href="#webcast">WEBCAST</a></li>
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
@@ -227,7 +246,7 @@
 		<div class="about">
 			<div class="about-header">ABOUT</div>
 			<div class="about-text">
-				Chezy Champs is an annual off-season FIRST robotics tournament hosted by Team 254. The tournament takes place in late September, at Bellarmine College Preparatory in San Jose, California.  This fall, Team 254 is hosting the second annual Chezy Champs, a premiere off-season FIRST Robotics competition event. 32 teams will come together in San Jose to battle it out to determine the best in the west.
+				Chezy Champs is an annual off-season FIRST robotics tournament hosted by Team 254. The tournament takes place in late September, at Bellarmine College Preparatory in San Jose, California.  This fall, Team 254 is hosting the third annual Chezy Champs, a premiere off-season FIRST Robotics competition event. 32 teams will come together in San Jose to battle it out to determine the best in the west.
 			</div>
 			<!-- <div class="social-container" style="padding-top: 40px;">
 				<img src="files/swoosh.png" width="200px;">
@@ -235,14 +254,6 @@
 			<div class="badge-container">
 				<div class="badge-icon"><p class="number">32</p><p class="text">Teams</p></div>
 				<div class="badge-icon"><p class="number">2</p><p class="text">Days</p></div>
-			</div>
-			<div class="about-header webcast-type">WEBCAST</div>
-			<div class="about-text">
-				Chezy Champs will be live streamed via STEMtv when the event is in session. <br />Matches will be uploaded to Youtube later.
-			</div>
-			<div class="button-container">
-				<a href="https://www.thebluealliance.com/gameday#layout=0&view_0=2015cc-1" target=_blank><div class="button">View Webcast</div></a> 
-				<a href="https://www.youtube.com/channel/UCKqzB6PVkWvtrGUWl0nv4gQ" target=_blank><div class="button" target=_blank>Archived Match Video</div></a>
 			</div>
 		</div>
 
@@ -252,7 +263,7 @@
 				<div class="info-header">INFORMATION</div>
 				<div class="info-text">
 					Chezy Champs features an entertaining show, competent volunteers, and a focus on the team experience.  There will also be 254-style photo shoots for all robots Friday evening, blue banners and awesome trophies, and rule changes that go further than IRI in fixing Recycle Rush.
-					<p class="thin-text" style="padding-top: 40px;"><span class="bold-text">When: </span>Saturday and Sunday, September 19-20, 2015</p>
+					<p class="thin-text" style="padding-top: 40px;"><span class="bold-text">When: </span>Saturday and Sunday, September 24-25, 2016 (With Friday night load-in)</p>
 					<p class="thin-text"><span class="bold-text">Where: </span>Bellarmine College Preparatory, San Jose, California</p>
 					<p class="thin-text"><span class="bold-text">Registration: </span>$300 ($600 for field-side pit)</p>
 					<!-- <p class="thin-text"><span class="bold-text">Capacity: </span>38 teams</p> -->
@@ -261,24 +272,24 @@
 			</div>
 			<div class="link-container">
 				<div class="link" style="border-bottom-style:none">
-					<div class="link-header">Match Schedule</div>
-					<div class="link-text">Check out the preliminary qualification match schedule on The Blue Alliance.</div>
-					<a href="https://www.thebluealliance.com/event/2015cc">
+					<div class="link-header">Application</div>
+					<div class="link-text">Apply for Chezy Champs using this form.  Selections will be made based on criteria that include competitiveness, locality, and other factors.</div>
+					<a href="https://docs.google.com/forms/d/183FspHWlWEZtF8WEjaWPsciKbEDlq-BO4YQ2YOFEz0o/viewform">
 						<div class="button-container">
 							<div class="button-inverted">
-								Match Schedule &nbsp;
+								Application Form &nbsp;
 								<i class="fa fa-chevron-right"></i>
 							</div>
 						</div>
 					</a>
 				</div>
 				<div class="link" style="border-bottom-style:none">
-					<div class="link-header">Pit &amp; Arena Map</div>
-					<div class="link-text">See where your pit will be!</div>
-					<a href="files/pit_map.pdf" target="_blank">
+					<div class="link-header">Volunteer Signups</div>
+					<div class="link-text">We need many volunteers to make Chezy Champs a success! If you are interested in volunteering, please fill out this form.</div>
+					<a href="https://docs.google.com/forms/d/1EjMUl-NfPnxntEaLV7Zr5T8qUBxAlQj09cvFXSCEqBM/viewform">
 						<div class="button-container">
 							<div class="button-inverted">
-								Pit Map &nbsp;
+								Volunteer Form &nbsp;
 								<i class="fa fa-chevron-right"></i>
 							</div>
 						</div>
@@ -287,17 +298,20 @@
 			</div>
 		</div>
 
+		<div class="placeholder" id="map"></div>
 		<div class="map">	
 			<a href="files/CampusMap3.pdf" target=_blank><img src="files/CampusMap3.png"></a>
 			<div class="map-blurb">
 				<div class="map-header">MAP</div>
-				<p>Chezy Champs has two parking areas which are not directly connected to each other:</p>
-				<p><b>Pit Parking</b><br />Limited pit parking is available at <em>960 W. Hedding St. San Jose</em></p>
-				<p><b>Arena Parking</b><br />Take Stockton Ave to <em>799 Emory St. San Jose</em></p>
+				<p class="map-text">Chezy Champs has two parking areas which are not directly connected to each other:</p>
+				<div class="link-header black">Pit Parking</div>
+				<div class="link-text black">Limited pit parking is available at <em>960 W. Hedding St. San Jose</em></div>
+				<div class="link-header black">Arena Parking</div>
+				<div class="link-text black">Take Stockton Ave to <em>799 Emory St. San Jose</em></div>
 			</div>
 		</div>
 
-		<div class="placeholder" id="schedule"></div>
+		<!-- <div class="placeholder" id="schedule"></div>
 		<div class="schedule-container">
 			<div class="schedule">
 				<div class="schedule-header">SCHEDULE</div>
@@ -391,15 +405,14 @@
 					</tr>
 				</table>
 			</div>
-		</div>
+		</div> -->
 
-		<div class="placeholder" id="rules"></div>
+		<!-- <div class="placeholder" id="rules"></div>
 		<div class="webcast">
 			<div class="rules-header">RULES</div>
-			<!-- <iframe name="stack" src="http://www.twitch.tv/gamesense/embed" frameborder="0" scrolling="no" height="500" width="100%"></iframe> -->
 			<div class="rule-container">
 				<div class="deadlift">
-					<img src="//media.team254.com/web/chezy-champs/Deadlift1.png">
+					<img src="https://media.team254.com/web/chezy-champs/Deadlift1.png">
 					<p>
 						Chezy Champs will feature 13 rule changes that go farther than IRI in fixing Recycle Rush.
 					</p>
@@ -431,166 +444,12 @@
 
 			</div>
 
-			<!-- <div id="myCarousel" class="carousel slide" data-ride="carousel">
-	
-			  <ol class="carousel-indicators">
-			    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-			    <li data-target="#myCarousel" data-slide-to="1"></li>
-			    <li data-target="#myCarousel" data-slide-to="2"></li>
-			    <li data-target="#myCarousel" data-slide-to="3"></li>
-			    <li data-target="#myCarousel" data-slide-to="4"></li>
-			  </ol>
+		</div> -->
 
-			  <div class="carousel-inner" role="listbox">
-			    <div class="item active">
-			      <img src="files/carousel1.jpg" alt="Chania">
-			    </div>
-
-			    <div class="item">
-			      <img src="files/carousel2.jpg" alt="Chania">
-			    </div>
-
-			    <div class="item">
-			      <img src="files/carousel3.jpg" alt="Flower">
-			    </div>
-
-			    <div class="item">
-			      <img src="files/carousel4.jpg" alt="Flower">
-			    </div>
-
-			    <div class="item">
-			      <img src="files/carousel5.jpg" alt="Flower">
-			    </div>
-
-			  </div>
-
-			  <div class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-			    <img src="files/left.png" style="vertical-align: middle;">
-			    <span class="sr-only">Previous</span>
-			  </div>
-			  <div class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-			    <img src="files/right.png" style="vertical-align: middle;">
-			    <span class="sr-only">Next</span>
-			  </div>
-			</div> -->
-
-		</div>
-
-		<div class="placeholder" id="sponsors"></div>
-		<div class="sponsor-container">
-			<div class="sponsor-img-container">
-				<div class="sponsor-img"></div>
-			</div>				
-			
-			<div class="sponsor-header">SPONSORS</div>
-			<div class="sponsor-text" style="display:inline-block!important"><i>The Chezy Champs planning committee would like to sincerely thank all of the following sponsors for making this event possible.</i></div>
-			
-			<div class="sponsor-row">
-				<div class="sponsor-column for-sponsor-picture">
-					<img src="files/sponsors/vexpro.png" width="80%">
-				</div>
-				<div class="sponsor-column">
-					<p class="sponsor-title">VEX PRO</p>
-					<p class="sponsor-blurb">VEX Pro produces battle-tested robotics components to allow any team to compete with the pros. VEX Pro has generously provided sponsorship for Chezy Champs since its inaugural year. Without them, this event would not be possible.</p>
-					<div class="social-container">
-						<a class="button" href="http://www.vexpro.com">
-							VISIT SITE &nbsp;
-							<i class="fa fa-angle-right" ></i>
-						</a>
-					</div>	
-				</div>
-			</div>
-
-			<div class="sponsor-row">
-				<div class="sponsor-column">
-					<a href="http://robotics.nasa.gov" target="_blank">
-						<div class="sponsor-logos">
-							<img src="files/sponsors/nasa.png" width="70%">
-						</div>
-					</a>
-				</div>
-				<div class="sponsor-column">
-					<a href="http://stemtv.io/" target="_blank">
-						<div class="sponsor-logos">
-							<img src="files/sponsors/stemtv.png" style="padding-top: 10%" width="110%">
-						</div>
-					</a>
-				</div>
-			</div>
-
-			<div class="sponsor-row shorter">
-				<div class="sponsor-column">
-					<a href="http://robotics.nasa.gov" target="_blank">
-						<div class="sponsor-logos">
-							<img src="files/sponsors/4d.png" width="100%">
-						</div>
-					</a>
-				</div>
-				<div class="sponsor-column">
-					<a href="http://stemtv.io/" target="_blank">
-						<div class="sponsor-logos">
-							<img src="files/sponsors/qualcomm.png" width="100%">
-						</div>
-					</a>
-				</div>
-			</div>
-
-			<div class="sponsor-row shorter">
-				<div class="sponsor-column">
-					<p class="sponsor-title">The Magarelli Family</p>
-					<p class="sponsor-title">The Jiminez Family</p>
-				</div>
-				<div class="sponsor-column">
-					<p class="sponsor-title">World Metal Finishing</p>
-					<p class="sponsor-title"><a href="http://www.cisco.com" target=_blank>Cisco</a></p>
-				</div>
-			</div>
-
-			<!-- <div class="sponsor-row">
-				<div class="sponsor-column for-sponsor-picture">
-					<img src="http://www.infiniteunknown.net/wp-content/uploads/2010/02/bae-systems.jpg" width="100%">
-				</div>
-				<div class="sponsor-column">
-					<div class="sponsor-logos">
-						<img src="http://www.corporatewatch.org.uk/sites/default/files/BAE-logo.jpg" width="100%">
-					</div>
-					<p class="sponsor-title">SPONSOR TITLE</p>
-					<p class="sponsor-blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet varius mi, at ultrices sem condimentum in. Donec fermentum lorem sit amet nunc posuere, eu aliquet tortor interdum.</p>
-					<div class="social-container">
-						<div class="button-border">
-							VISIT SITE &nbsp;
-							<i class="fa fa-angle-right" ></i>
-						</div>
-					</div>	
-				</div>
-			</div> -->
-
-			<!-- <div class="sponsor-row taller">
-				<div class="sponsor-column">
-					<div class="sponsor-logos">
-						<img src="http://www.socalgreenrealestateblog.com/wp-content/uploads/2015/03/NASA-logo.png" width="40%">
-					</div>
-					<p class="sponsor-title">SPONSOR TITLE</p>
-					<p class="sponsor-blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet varius mi, at ultrices sem condimentum in. Donec fermentum lorem sit amet nunc posuere, eu aliquet tortor interdum.</p>
-					<div class="social-container">
-						<div class="button-border">
-							VISIT SITE &nbsp;
-							<i class="fa fa-angle-right"></i>
-						</div>
-					</div>	
-				</div>
-				<div class="sponsor-column for-sponsor-picture">
-					<img src="http://farm5.static.flickr.com/4131/5197443918_dfc0ec94b3_b.jpg" width="120%">
-				</div>
-			</div> -->
-
-		</div>
-
-
-		<!-- <div class="placeholder" id="webcast"></div>
+		<div class="placeholder" id="webcast"></div>
 		<div class="webcast">
 			<div class="webcast-header">WEBCAST</div>
-			<iframe name="stack" src="http://www.twitch.tv/gamesense/embed" frameborder="0" scrolling="no" height="500" width="100%"></iframe>
+			<!-- <iframe name="stack" src="http://www.twitch.tv/gamesense/embed" frameborder="0" scrolling="no" height="500" width="100%"></iframe> -->
 			<div class="webcast-text">
 				Chezy Champs will be livestreamed on this page.  Check back on September 19th and 20th to watch!
 			</div>
@@ -599,7 +458,7 @@
 
 			<script type="text/javascript">
 				// set the date we're counting down to
-				var target_date = new Date("Sep 19, 2015").getTime();
+				var target_date = new Date("Sep 24, 2016").getTime();
 				 
 				// variables for time units
 				var days, hours, minutes, seconds;
@@ -632,23 +491,77 @@
 
 
 			</script>	
-		</div>  -->
+		</div> 
+
+		<!-- <div class="placeholder" id="sponsors"></div>
+		<div class="sponsor-container">
+			<div class="sponsor-img-container">
+				<div class="sponsor-img"></div>
+			</div>				
+			
+			<div class="sponsor-header">SPONSORS</div>
+			<div class="sponsor-text" style="display:inline-block!important"><i>The Chezy Champs planning committee would like to sincerely thank all of the following sponsors for making this event possible.</i></div>
+			
+			
+
+			<div class="sponsor-row taller">
+				<div class="sponsor-column for-sponsor-picture">
+					<img src="http://www.infiniteunknown.net/wp-content/uploads/2010/02/bae-systems.jpg" width="100%">
+				</div>
+				<div class="sponsor-column">
+					<div class="sponsor-logos">
+						<img src="http://www.corporatewatch.org.uk/sites/default/files/BAE-logo.jpg" width="100%">
+					</div>
+					<p class="sponsor-title">SPONSOR TITLE</p>
+					<p class="sponsor-blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet varius mi, at ultrices sem condimentum in. Donec fermentum lorem sit amet nunc posuere, eu aliquet tortor interdum.</p>
+					<div class="social-container">
+						<div class="button-border">
+							VISIT SITE &nbsp;
+							<i class="fa fa-angle-right" ></i>
+						</div>
+					</div>	
+				</div>
+			</div>
+
+			<div class="sponsor-row taller">
+				<div class="sponsor-column">
+					<div class="sponsor-logos">
+						<img src="http://www.socalgreenrealestateblog.com/wp-content/uploads/2015/03/NASA-logo.png" width="40%">
+					</div>
+					<p class="sponsor-title">SPONSOR TITLE</p>
+					<p class="sponsor-blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet varius mi, at ultrices sem condimentum in. Donec fermentum lorem sit amet nunc posuere, eu aliquet tortor interdum.</p>
+					<div class="social-container">
+						<div class="button-border">
+							VISIT SITE &nbsp;
+							<i class="fa fa-angle-right"></i>
+						</div>
+					</div>	
+				</div>
+				<div class="sponsor-column for-sponsor-picture">
+					<img src="http://farm5.static.flickr.com/4131/5197443918_dfc0ec94b3_b.jpg" width="120%">
+				</div>
+			</div>
+
+		</div>
+ -->
+
+		
 
 		<div class="footer">
 			<div class="social-container">
 				<a href="https://twitter.com/chezychamps">
 					<div class="social-btn">
-						<img class="twitter" src="//media.team254.com/web/chezy-champs/twitter.png" width="30px">
+						<img class="twitter" src="https://media.team254.com/web/chezy-champs/twitter.png" width="30px">
 					</div>
 				</a>
 				<a href="https://www.facebook.com/team254robotics">
 					<div class="social-btn" style="padding-top:11px">
-						<img class="facebook" src="//media.team254.com/web/chezy-champs/facebook.png" height="30px">
+						<img class="facebook" src="https://media.team254.com/web/chezy-champs/facebook.png" height="30px">
 					</div>
 				</a>
-				<a href="http://www.thebluealliance.com/event/2015cc">
+				<a href="http://www.thebluealliance.com/event/2016cc">
 					<div class="social-btn" style="padding-top:11px">
-						<img class="blue-alliance" src="//media.team254.com/web/chezy-champs/bluealliance.png" height="30px">
+						<img class="blue-alliance" src="https://media.team254.com/web/chezy-champs/bluealliance.png" height="30px">
 					</div>
 				</a>
 			</div>
