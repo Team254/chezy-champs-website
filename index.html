@@ -118,16 +118,16 @@
 				$('#nav-map').removeClass('active');
 			}
 
-			// if(isScrolledIntoView(".schedule-text")) {
-			// 	$('#nav-rules').removeClass('active');
-			// 	$('#nav-info').removeClass('active');
-			// 	$('#nav-schedule').addClass('active');
-			// 	$('#nav-home').removeClass('active');
-			// 	$('#nav-about').removeClass('active');
-			// 	$('#nav-sponsors').removeClass('active');
-			// 	$('#nav-webcast').removeClass('active');
-			//	$('#nav-map').removeClass('active');
-			// }
+			if(isScrolledIntoView(".schedule-text")) {
+				$('#nav-rules').removeClass('active');
+				$('#nav-info').removeClass('active');
+				$('#nav-schedule').addClass('active');
+				$('#nav-home').removeClass('active');
+				$('#nav-about').removeClass('active');
+				$('#nav-sponsors').removeClass('active');
+				$('#nav-webcast').removeClass('active');
+				$('#nav-map').removeClass('active');
+			}
 
 			// if(isScrolledIntoView(".rules-header")) {
 			// 	$('#nav-rules').addClass('active');
@@ -140,16 +140,16 @@
 			// 	$('#nav-schedule').removeClass('active');
 			// }
 
-			// if(isScrolledIntoView(".sponsor-text")) {
-			// 	$('#nav-rules').removeClass('active');
-			// 	$('#nav-sponsors').addClass('active');
-			// 	$('#nav-home').removeClass('active');
-			// 	$('#nav-info').removeClass('active');
-			// 	$('#nav-about').removeClass('active');
-			// 	$('#nav-webcast').removeClass('active');
-			//	$('#nav-map').removeClass('active');
-			// 	$('#nav-schedule').removeClass('active');
-			// }
+			if(isScrolledIntoView(".sponsor-text")) {
+				$('#nav-rules').removeClass('active');
+				$('#nav-sponsors').addClass('active');
+				$('#nav-home').removeClass('active');
+				$('#nav-info').removeClass('active');
+				$('#nav-about').removeClass('active');
+				$('#nav-webcast').removeClass('active');
+				$('#nav-map').removeClass('active');
+				$('#nav-schedule').removeClass('active');
+			}
 
 			if(isScrolledIntoView(".map-text")) {
 				$('#nav-rules').removeClass('active');
@@ -223,8 +223,8 @@
 		        <li id="nav-map"><a href="#map">MAP</a></li>
 		        <li id="nav-schedule"><a href="#schedule">SCHEDULE</a></li>
 		        <!-- <li id="nav-rules"><a href="#rules">RULE CHANGES</a></li> -->
-		        <!-- <li id="nav-sponsors"><a href="#sponsors">SPONSORS</a></li> -->
 		        <li id="nav-webcast"><a href="#webcast">WEBCAST</a></li>
+		        <li id="nav-sponsors"><a href="#sponsors">SPONSORS</a></li>
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
@@ -254,6 +254,9 @@
 			<div class="badge-container">
 				<div class="badge-icon"><p class="number">43</p><p class="text">Teams</p></div>
 				<div class="badge-icon"><p class="number">2</p><p class="text">Days</p></div>
+			</div>
+			<div class="about-text">
+				Questions? Contact us at <script>document.write('<'+'a'+' '+'h'+'r'+'e'+'f'+'='+"'"+'m'+'a'+'&'+'#'+'1'+'0'+'5'+';'+'l'+'t'+'o'+'&'+'#'+'5'+'8'+';'+'&'+'#'+'9'+'9'+';'+'h'+'e'+'z'+'%'+'7'+'9'+'c'+'h'+'%'+'6'+'1'+'m'+'p'+'s'+'&'+'#'+'6'+'4'+';'+'t'+'%'+'6'+'5'+'&'+'#'+'9'+'7'+';'+'m'+'&'+'#'+'5'+'0'+';'+'%'+'3'+'5'+'&'+'#'+'5'+'2'+';'+'%'+'2'+'&'+'#'+'6'+'9'+';'+'%'+'6'+'3'+'o'+'%'+'&'+'#'+'5'+'4'+';'+'D'+"'"+'>'+'c'+'&'+'#'+'1'+'0'+'4'+';'+'e'+'z'+'y'+'&'+'#'+'9'+'9'+';'+'h'+'a'+'m'+'p'+'s'+'&'+'#'+'6'+'4'+';'+'t'+'&'+'#'+'1'+'0'+'1'+';'+'&'+'#'+'9'+'7'+';'+'m'+'&'+'#'+'5'+'0'+';'+'&'+'#'+'5'+'3'+';'+'4'+'&'+'#'+'4'+'6'+';'+'&'+'#'+'9'+'9'+';'+'o'+'m'+'<'+'/'+'a'+'>');</script><noscript>[Turn on JavaScript to see the email address]</noscript>
 			</div>
 		</div>
 
@@ -500,18 +503,20 @@
 			</script>	
 		</div> 
 
-		<!-- <div class="placeholder" id="sponsors"></div>
+		 <div class="placeholder" id="sponsors"></div>
 		<div class="sponsor-container">
 			<div class="sponsor-img-container">
 				<div class="sponsor-img"></div>
 			</div>				
 			
 			<div class="sponsor-header">SPONSORS</div>
-			<div class="sponsor-text" style="display:inline-block!important"><i>The Chezy Champs planning committee would like to sincerely thank all of the following sponsors for making this event possible.</i></div>
+			<div class="sponsor-text" style="display:inline-block!important"><i>
+			<!-- The Chezy Champs planning committee would like to sincerely thank all of the following sponsors for making this event possible. -->
+			Interested in sponsoring Chezy Champs? Contact us at <script>document.write('<'+'a'+' '+'h'+'r'+'e'+'f'+'='+"'"+'m'+'a'+'&'+'#'+'1'+'0'+'5'+';'+'l'+'t'+'o'+'&'+'#'+'5'+'8'+';'+'&'+'#'+'9'+'9'+';'+'h'+'e'+'z'+'%'+'7'+'9'+'c'+'h'+'%'+'6'+'1'+'m'+'p'+'s'+'&'+'#'+'6'+'4'+';'+'t'+'%'+'6'+'5'+'&'+'#'+'9'+'7'+';'+'m'+'&'+'#'+'5'+'0'+';'+'%'+'3'+'5'+'&'+'#'+'5'+'2'+';'+'%'+'2'+'&'+'#'+'6'+'9'+';'+'%'+'6'+'3'+'o'+'%'+'&'+'#'+'5'+'4'+';'+'D'+"'"+'>'+'c'+'&'+'#'+'1'+'0'+'4'+';'+'e'+'z'+'y'+'&'+'#'+'9'+'9'+';'+'h'+'a'+'m'+'p'+'s'+'&'+'#'+'6'+'4'+';'+'t'+'&'+'#'+'1'+'0'+'1'+';'+'&'+'#'+'9'+'7'+';'+'m'+'&'+'#'+'5'+'0'+';'+'&'+'#'+'5'+'3'+';'+'4'+'&'+'#'+'4'+'6'+';'+'&'+'#'+'9'+'9'+';'+'o'+'m'+'<'+'/'+'a'+'>');</script><noscript>[Turn on JavaScript to see the email address]</noscript></i></div>
 			
 			
 
-			<div class="sponsor-row taller">
+			<!-- <div class="sponsor-row taller">
 				<div class="sponsor-column for-sponsor-picture">
 					<img src="http://www.infiniteunknown.net/wp-content/uploads/2010/02/bae-systems.jpg" width="100%">
 				</div>
@@ -547,10 +552,10 @@
 				<div class="sponsor-column for-sponsor-picture">
 					<img src="http://farm5.static.flickr.com/4131/5197443918_dfc0ec94b3_b.jpg" width="120%">
 				</div>
-			</div>
+			</div> -->
 
 		</div>
- -->
+ 
 
 		
 
