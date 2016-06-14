@@ -222,9 +222,9 @@
 		        <li id="nav-info"><a href="#info">INFORMATION</a></li>
 		        <li id="nav-map"><a href="#map">MAP</a></li>
 		        <li id="nav-schedule"><a href="#schedule">SCHEDULE</a></li>
-		        <!-- <li id="nav-rules"><a href="#rules">RULE CHANGES</a></li> -->
-		        <li id="nav-webcast"><a href="#webcast">WEBCAST</a></li>
+		        <li id="nav-rules"><a href="#rules">RULES</a></li>
 		        <li id="nav-sponsors"><a href="#sponsors">SPONSORS</a></li>
+		        <li id="nav-webcast"><a href="#webcast">WEBCAST</a></li>
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
@@ -417,32 +417,23 @@
 			</div>
 		</div>
 
-		<!-- <div class="placeholder" id="rules"></div>
-		<div class="webcast">
+		<div class="placeholder" id="rules"></div>
+		<div class="rules">
 			<div class="rules-header">RULES</div>
 			<div class="rule-container">
 				<div class="deadlift">
-					<img src="https://media.team254.com/web/chezy-champs/Deadlift1.png">
-					<p>
-						Chezy Champs will feature 13 rule changes that go farther than IRI in fixing Recycle Rush.
-					</p>
+					<img src="https://media.team254.com/2016/03/86bb0776-2016.jpg">
 				</div>
 
 				<div class="rule-changes">
-					<p><b>Chezy Champs will be played under the FIRST Robotics Competition <a href='http://www.usfirst.org/sites/default/files/uploadedFiles/Robotics_Programs/FRC/Game_and_Season__Info/2015/GameManual20150407.pdf'>Recycle Rush rules</a> with the following modifications:</b></p>
-					<p>1. Each alliance may place up to three additional recycling containers anywhere on their side of the field, except for the AUTO ZONE, prior to the match.</p>
-					<p>2. The left-hand (when viewed from the alliance station) line of five gray totes against the step will be right-side up.</p>
-					<p>3. The right-hand (when viewed from the alliance station) line of five gray totes against the step will be removed and the totes will be placed in the alliance station instead. The space they occupied will be filled by moving the remaining nine right-hand landfill totes up against the step, while maintaining their orientation relative to each other.</p>
-					<p>4. During the autonomous period, robots may not contact the two recycling containers on the left side of the step (when viewed from the alliancestation). Violation: Red card.</p>
-					<p>5. No points are awarded for processed or unprocessed litter, but litter in recycling containers will be scored as per the official rules.</p>
-					<p>6. One alliance's litter may not contact anything on the other alliance's side of the field. Violation: Yellow card.</p>
-					<p>7. Litter may be introduced over the alliance station wall at any point during the teleoperated period.</p>
-					<p>8. Causing yellow totes to transfer to the other side of the field while attempting to coopertate will not result in a foul.</p>
-					<p>9. Yellow totes are counted as gray totes when scored on the scoring platform, during the entire tournament.</p>
-					<p>10. Playoff rounds are head-to-head, best of three, using the 2014 bracket structure.</p>
-					<p>11. Any number of alliance members may be within the human player zone during the teleoperated period.</p>
-					<p>12. Alliance members may contact the chute door and totes simultaneously.</p>
-					<p>13. Teams must be able to demonstrate, if asked by the head referee, that their robot fits within the TRANSPORT CONFIGURATION, but may transport their robot however they see fit.</p>
+					<p><b>Chezy Champs will be played under the  <a href='http://frclinks.com/d'>FIRST Stronghold rules</a> with the following modifications:</b></p>
+					<p>1. The initial TOWER STRENGTH will be 10.</p>
+					<p>2. The Low Bar will always be in Position 1. The remaining available DEFENSES will be: Cheval de Frise, Moat, Ramparts, Rock Wall, Rough Terrain. There are no DEFENSE categories; any four of the five will be present in Positions 2 to 5 of the OUTER WORKS. The Portcullis, Drawbridge and Sally Port will not be used at Chezy Champs.</p>
+					<p>3. During qualification matches, the DEFENSES in Positions 2 to 5 will be randomly selected and placed once per round of all teams playing. There will be no audience selection of DEFENSES.</p>
+					<p>4. During playoff matches, each ALLIANCE will select the defenses and their placement in Positions 2 to 5 of their own OUTER WORKS.</p>
+					<p>5. A ROBOT contacting carpet in the opponent’s SECRET PASSAGE may not contact opposing ROBOTS who are in contact with the carpet in the SECRET PASSAGE, regardless of who initiates the contact.</p>
+					<p>6. After a ROBOT CROSSES a DEFENSE in AUTO, it will no longer incur a FOUL for crossing the MIDLINE or contacting an opposing ROBOT.</p>
+					<p>7. There will be no playoff tiebreakers; all ties are replayed.</p>
 					
 				</div>
 				<div class="rule-holder">
@@ -454,54 +445,7 @@
 
 			</div>
 
-		</div> -->
-
-		<div class="placeholder" id="webcast"></div>
-		<div class="webcast">
-			<div class="webcast-header">WEBCAST</div>
-			<!-- <iframe name="stack" src="http://www.twitch.tv/gamesense/embed" frameborder="0" scrolling="no" height="500" width="100%"></iframe> -->
-			<div class="webcast-text">
-				Chezy Champs will be livestreamed on this page.  Check back on September 24th and 25th to watch!
-			</div>
-
-			<div id="countdown" class="webcast-timer"></div>
-
-			<script type="text/javascript">
-				// set the date we're counting down to
-				var target_date = new Date("Sep 24, 2016").getTime();
-				 
-				// variables for time units
-				var days, hours, minutes, seconds;
-				 
-				// get tag element
-				var countdown = document.getElementById("countdown");
-				 
-				// update the tag with id "countdown" every 1 second
-				setInterval(function () {
-				 
-				    // find the amount of "seconds" between now and target
-				    var current_date = new Date().getTime();
-				    var seconds_left = (target_date - current_date) / 1000;
-				 
-				    // do some time calculations
-				    days = parseInt(seconds_left / 86400);
-				    seconds_left = seconds_left % 86400;
-				     
-				    hours = parseInt(seconds_left / 3600);
-				    seconds_left = seconds_left % 3600;
-				     
-				    minutes = parseInt(seconds_left / 60);
-				    seconds = parseInt(seconds_left % 60);
-				     
-				    // format countdown string + set tag value
-				    countdown.innerHTML = days + "d " + hours + "h "
-				    + minutes + "m " + seconds + "s";  
-				 
-				}, 1000);
-
-
-			</script>	
-		</div> 
+		</div>
 
 		 <div class="placeholder" id="sponsors"></div>
 		<div class="sponsor-container">
@@ -555,6 +499,53 @@
 			</div> -->
 
 		</div>
+
+		<div class="placeholder" id="webcast"></div>
+		<div class="webcast">
+			<div class="webcast-header">WEBCAST</div>
+			<!-- <iframe name="stack" src="http://www.twitch.tv/gamesense/embed" frameborder="0" scrolling="no" height="500" width="100%"></iframe> -->
+			<div class="webcast-text">
+				Chezy Champs will be livestreamed on this page.  Check back on September 24th and 25th to watch!
+			</div>
+
+			<div id="countdown" class="webcast-timer"></div>
+
+			<script type="text/javascript">
+				// set the date we're counting down to
+				var target_date = new Date("Sep 24, 2016").getTime();
+				 
+				// variables for time units
+				var days, hours, minutes, seconds;
+				 
+				// get tag element
+				var countdown = document.getElementById("countdown");
+				 
+				// update the tag with id "countdown" every 1 second
+				setInterval(function () {
+				 
+				    // find the amount of "seconds" between now and target
+				    var current_date = new Date().getTime();
+				    var seconds_left = (target_date - current_date) / 1000;
+				 
+				    // do some time calculations
+				    days = parseInt(seconds_left / 86400);
+				    seconds_left = seconds_left % 86400;
+				     
+				    hours = parseInt(seconds_left / 3600);
+				    seconds_left = seconds_left % 3600;
+				     
+				    minutes = parseInt(seconds_left / 60);
+				    seconds = parseInt(seconds_left % 60);
+				     
+				    // format countdown string + set tag value
+				    countdown.innerHTML = days + "d " + hours + "h "
+				    + minutes + "m " + seconds + "s";  
+				 
+				}, 1000);
+
+
+			</script>	
+		</div> 
  
 
 		
