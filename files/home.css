@@ -647,7 +647,7 @@ a:focus, a:hover {
 .sponsor-logos {
 	width: 60%;
 	margin-left: 20%;
-	margin-top: 50px;
+	margin-top: 80px;
 	text-align: center;
 	display: block!important;
 }
@@ -726,6 +726,11 @@ a:focus, a:hover {
 
 .schedule-table td {
 	padding: 0px 10px;
+}
+
+.vexpro {
+	background-color: transparent;
+	margin: 0 25%;
 }
 
 @media (max-width: 1000px) {
