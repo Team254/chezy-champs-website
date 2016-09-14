@@ -7,6 +7,6 @@ APP=chezy-champs-website
 
 echo "Deploying $APP from Git master branch..."
 echo
-ssh $USER@$HOST "cd /opt/sites/$APP && git checkout -f && git pull"
+ssh $USER@$HOST "cd /opt/sites/$APP && git checkout -f && git fetch --all && git reset --hard origin/master"
 echo
 echo "Deployed $APP."
