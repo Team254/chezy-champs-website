@@ -465,7 +465,7 @@ a:focus, a:hover {
 	margin-top: 30px;
 	width: 64%;
 	display: inline-block;
-	height: 20vw;
+	/*height: 20vw;*/
 	overflow: hidden;
 }
 
