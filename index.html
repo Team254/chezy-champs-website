@@ -503,8 +503,11 @@
 		<div class="placeholder" id="webcast"></div>
 		<div class="webcast">
 			<div class="webcast-header">WEBCAST</div>
-			<!-- <iframe name="stack" src="http://www.twitch.tv/gamesense/embed" frameborder="0" scrolling="no" height="500" width="100%"></iframe> -->
-			<div class="webcast-text">
+			<iframe id="stream" src="https://player.twitch.tv/?channel=frcgamesense" frameborder="0" scrolling="no" height="auto" width="80%" style="margin-left: 10%; margin-top:50px"></iframe>
+			<script type="text/javascript">
+				$("#stream").height($("#stream").width()*9/16);
+			</script>
+			<!--<div class="webcast-text">
 				Chezy Champs will be livestreamed on this page.  Check back on September 24th and 25th to watch!
 			</div>
 
@@ -544,7 +547,7 @@
 				}, 1000);
 
 
-			</script>	
+			</script>	-->
 		</div> 
  
 
