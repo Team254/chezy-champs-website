@@ -7,13 +7,17 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 	<link rel="shortcut icon" href="files/favicon.ico" type="image/x-icon" />
 	<link rel="stylesheet" type="text/css" href="files/home.css">
-	<link rel="stylesheet" href="files/font-awesome-4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 	<!--<link rel="stylesheet" type="text/css" href="files/scrolling-nav.css">
 	<script type="text/javascript" src="files/scrolling-nav.css"></script>
 	<script type="text/javascript" src="files/jquery.easing.min.css"></script>-->
 	<script type="text/javascript">
+		$(document).ready(function() {
+			handleScroll();
+		});
+
 		function toggleHidden() {
 			var el = $('.rule-changes');
 			if ($("#toggle").html() == " Read More") {
@@ -83,8 +87,11 @@
 		    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
 		}
 
-		window.onscroll=function() {
+		window.onscroll = function() {
+			handleScroll();
+		};
 
+		function handleScroll() {
 			if(isScrolledIntoView(".header-text")) {
 				$('#nav-rules').removeClass('active');
 				$('#nav-home').addClass('active');
@@ -129,16 +136,16 @@
 				$('#nav-map').removeClass('active');
 			}
 
-			if(isScrolledIntoView(".rules-header")) {
-				$('#nav-rules').addClass('active');
-				$('#nav-info').removeClass('active');
-				$('#nav-home').removeClass('active');
-				$('#nav-about').removeClass('active');
-				$('#nav-sponsors').removeClass('active');
-				$('#nav-map').removeClass('active');
-				$('#nav-webcast').removeClass('active');
-				$('#nav-schedule').removeClass('active');
-			}
+			// if(isScrolledIntoView(".rules-header")) {
+			// 	$('#nav-rules').addClass('active');
+			// 	$('#nav-info').removeClass('active');
+			// 	$('#nav-home').removeClass('active');
+			// 	$('#nav-about').removeClass('active');
+			// 	$('#nav-sponsors').removeClass('active');
+			// 	$('#nav-map').removeClass('active');
+			// 	$('#nav-webcast').removeClass('active');
+			// 	$('#nav-schedule').removeClass('active');
+			// }
 
 			if(isScrolledIntoView(".sponsor-text")) {
 				$('#nav-rules').removeClass('active');
@@ -183,8 +190,7 @@
 				var x=scroll+"px";
 				document.getElementById("parallax").style.backgroundPosition =  "0px " + x;
 			}
-
-		};
+		}
 
 		window.mobileAndTabletcheck = function() {
 		  var check = false;
