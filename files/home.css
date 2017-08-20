@@ -381,6 +381,12 @@
 	line-height: 30px;
 }
 
+.webcast-text>a:hover {
+	color: #222;
+	text-decoration: none;
+	cursor: pointer;
+}
+
 .webcast-timer {
     color: #5a5a5a;
     font-size: 45px;
@@ -611,6 +617,12 @@ a:focus, a:hover {
 	margin-left: 20%;
 	line-height: 30px;
 	text-align: center;
+}
+
+.sponsor-text>i>a:hover {
+	color: #fff;
+	text-decoration: none;
+	cursor: pointer
 }
 
 .sponsor-img-container {
