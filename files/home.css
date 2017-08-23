@@ -708,32 +708,52 @@ a:focus, a:hover {
 }
 
 .schedule-container {
-	background-color: #aaa;
+	background-color: #202033;
+	background: radial-gradient(#111133 10%, #252533);
+	background: -webkit-radial-gradient(#111133 10%, #252533);
 	width: 100%;
 	padding: 50px 0px;
 	background-size: 100% auto;
 }
 
 .schedule-header {
-    color: #333;
-    font-size: 55px;
-    width: 86%;
-    margin-left: 7%;
+    color: #fff;
+    font-size: 70px;
+    /* width: 86%;
+	margin-left: 7%; */
+	display: flex;
+    justify-content: space-around;
     font-family: 'Open Sans Light', sans-serif;
-    font-weight: 300;
+	font-weight: 300;
 }
 
 .schedule-text {
-    color: #333;
-    font-size: 16px;
+    color: #fff;
+    font-size: 20px;
     font-family: 'Open Sans Light', sans-serif;
-    width: 86%;
-    margin-left: auto;
+	margin: 1% auto 1% auto;	
 }
 
-.schedule-table th {
+.schedule-text>tbody>tr>td {
+	vertical-align: top;
+}
+
+.schedule-table {
+	margin-left: 10%;
+}
+
+/* .schedule-table th {
 	color: #fff;
 	font-weight: 9000;
+} */
+
+.schedule-date {
+	font-size: 24px;
+	font-weight: bolder;
+}
+
+.schedule-date>td {
+	padding-bottom: 2px;
 }
 
 .schedule-table td {
