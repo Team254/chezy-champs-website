@@ -136,6 +136,11 @@
 	line-height: 30px;
 }
 
+.about-text>a:hover {
+	color: #222;
+	text-decoration: none;
+}
+
 .button-container {
 	width: 100%;
 	display: block;
@@ -159,7 +164,9 @@
 }
 
 .button:hover {
-	background-color: #3498db
+	background-color: #3498db;
+	color: #fff;
+	text-decoration: none;
 }
 
 .badge-container {
@@ -438,9 +445,9 @@
 	background-color: #555;
 }
 
-a:focus, a:hover {
+/* a:focus, a:hover {
 	color: transparent;
-}
+} */
 
 .footer-links {
 	width: 100%;
@@ -473,6 +480,11 @@ a:focus, a:hover {
 	display: inline-block;
 	/*height: 20vw;*/
 	overflow: hidden;
+}
+
+.rule-changes>p>b>a:hover {
+	color: #222;
+	text-decoration: none;
 }
 
 .showing {
