@@ -136,16 +136,16 @@
 				$('#nav-map').removeClass('active');
 			}
 
-			// if(isScrolledIntoView(".rules-header")) {
-			// 	$('#nav-rules').addClass('active');
-			// 	$('#nav-info').removeClass('active');
-			// 	$('#nav-home').removeClass('active');
-			// 	$('#nav-about').removeClass('active');
-			// 	$('#nav-sponsors').removeClass('active');
-			// 	$('#nav-map').removeClass('active');
-			// 	$('#nav-webcast').removeClass('active');
-			// 	$('#nav-schedule').removeClass('active');
-			// }
+			if(isScrolledIntoView(".rules-header")) {
+				$('#nav-rules').addClass('active');
+				$('#nav-info').removeClass('active');
+				$('#nav-home').removeClass('active');
+				$('#nav-about').removeClass('active');
+				$('#nav-sponsors').removeClass('active');
+				$('#nav-map').removeClass('active');
+				$('#nav-webcast').removeClass('active');
+				$('#nav-schedule').removeClass('active');
+			}
 
 			// if(isScrolledIntoView(".sponsor-text")) {
 			// 	$('#nav-rules').removeClass('active');
@@ -228,7 +228,7 @@
 		        <li id="nav-info"><a href="#info">INFORMATION</a></li>
 		        <li id="nav-map"><a href="#map">MAP</a></li>
 		        <li id="nav-schedule"><a href="#schedule">SCHEDULE</a></li>
-		        <!-- <li id="nav-rules"><a href="#rules">RULES</a></li> -->
+		        <li id="nav-rules"><a href="#rules">RULES</a></li>
 		        <!-- <li id="nav-sponsors"><a href="#sponsors">SPONSORS</a></li> -->
 		        <!-- <li id="nav-webcast"><a href="#webcast">SWAG</a></li> -->
 		        <!-- <li id="nav-webcast"><a href="#webcast">WEBCAST</a></li> -->
@@ -424,20 +424,31 @@
 				</table>
 			</div>
 		</div>
-
-<!-- 		<div class="placeholder" id="rules"></div>
+	<div class="placeholder" id="rules"></div>
 		<div class="rules">
 			<div class="rules-header">RULES</div>
 			<div class="rule-container">
 				<div class="deadlift">
-					<img src="https://media.team254.com/2017/03/8fcb07ae-misfire-400.jpg">
+					<img src="https://media.team254.com/2018/03/965407da-2018-Team-254-Robot.jpg">
 				</div>
 
 				<div class="rule-changes">
-					<p style="display:block"><b>Chezy Champs will be played under the  <a href='http://frclinks.com/d'>FIRST Steamworks rules</a> with the following modifications:</b></p>
-					<p>1. No inspection, honor system on legality. +5 pounds weight allowance for repairs and minor modifications. All other FIRST robot rules apply. Event organizers may conduct ad-hoc inspections at any time; violations identified must be corrected before the robot can participate in subsequent matches.</p>
-					<p>2. To account for the time it takes for balls entering the boiler to be counted, balls will continue to be scored at autonomous point values for five seconds after the end of the autonomous period. Similarly, balls will continue to be scored at teleoperated point values for five seconds after the end of the teleoperated period.</p>
-					<p>3. Four-team alliances in the eliminations tournament. 1-8, 8-1, 1-8 selection order.</p>
+					<p style="display:block"><b>Chezy Champs will be played under the  <a href='http://frclinks.com/d'>FIRST Power Up rules</a> with the following modifications:</b></p>
+					<p style="display:block"><b>Inspection</b></p>
+					<p>There will be no robot inspections conducted, and teams are allowed an extra five (5) pounds weight for repairs and minor modifications. Event organizers may conduct ad-hoc inspections at any time; violations identified must be corrected before the robot can participate in subsequent matches, and teams may be retroactively disqualified from past matches for egregious violations that resulted in a competitive advantage.</p>
+					<p style="display:block"><b>Gameplay</b> (changes to existing rules are underlined)</p>
+					<p>In general, minor violations of game rules that, in the best judgement of the REFEREES, meet ALL of the below conditions, will not be penalized:</p>
+					<ol>
+						<li>Are accidental</li>
+						<li>Do not pose a safety hazard</li>
+						<li>Do not change the difficulty of the game for either alliance</li>
+					</ol>
+					<p><b><u>G09. Launching POWER CUBES is okay.</b> Robots may launch power cubes without restriction, so long as doing so would not also violate S01, G20, G21, G24, or G25.</u></p>
+					<p><b>G22. One POWER CUBE per ROBOT.</b> ROBOTS may not control more than one (1) POWER CUBE at a time, <u>except when breaking the plane of their own EXCHANGE ZONE.</u></p>
+					<p><b>G25. PLATES are moved by POWER CUBES, not ROBOTS.</b> Except via the weight of placed POWER CUBES, ROBOTS may not directly or transitively cause or prevent the movement of PLATES <u>to their ALLIANCE's advantage.</u> Movement, or prevention of movement, of PLATES because of momentary ROBOT action resulting in minimal PLATE displacement is not a violation of this rule. A ROBOT forced to affect the position of a PLATE because of contact by an opponent ROBOT either directly or transitively through a POWER CUBE or other ROBOT (e.g. a ROBOT wedged underneath the SCALE by the opposing ALLIANCE either intentionally or accidentally) is not a violation of this rule.</p>
+					<p><b>A04. Stay out of your opponent’s side of the FIELD.</b> During AUTO, no part of a ROBOT’S BUMPERS may pass from the NULL TERRITORY to the opponent’s side of the FIELD. Violation: FOUL. If contact is made with an opponent ROBOT in their side of the FIELD (either direct contact or transitive contact through a POWER CUBE), TECH FOUL <u>and YELLOW CARD. If the contact prevents the opponent ALLIANCE from achieving the AUTO QUEST, the associated Ranking Point will be granted automatically.</u></p>
+					<p><b>Alliance Selection</b></p>
+					<p>Chezy Champs will use four-team playoff alliances. All rules governing their selection and operation will be identical to those for Championship playoff alliances in section 10.11.1 in the official manual.</p>
 					
 				</div>
 				<!--  <div class="rule-holder">
