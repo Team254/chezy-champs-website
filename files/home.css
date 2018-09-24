@@ -774,7 +774,7 @@
 
 .vexpro {
 	background-color: transparent;
-	margin: 0 25%;
+	margin: 0 auto;
 }
 
 @media (max-width: 1000px) {
