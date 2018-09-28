@@ -618,7 +618,7 @@
 	margin-top: -360px;
 }
 
-.sponsor-text {
+.spr-text {
 	position: absolute;
 	margin-top: -260px;
     color: #fff;
@@ -631,7 +631,7 @@
 	text-align: center;
 }
 
-.sponsor-text>i>a:hover {
+.spr-text>i>a:hover {
 	color: #fff;
 	text-decoration: none;
 	cursor: pointer
@@ -1127,7 +1127,7 @@
 		margin-top: -500px
 	}
 
-	.sponsor-text {
+	.spr-text {
 		font-size: 40px;
 		line-height: 1.4;
 		margin-top: -325px;
@@ -1141,11 +1141,15 @@
 		width: 100%;
 	}
 
+	.vexpro {
+		margin: 0 auto;
+	}
+
 	.sponsor-title {
 		font-size: 50px;
 	}
 
-	.sponsor-text {
+	.spr-text {
 		font-size: 30px;
 	}
 
@@ -1321,7 +1325,7 @@
 		height: 600px;
 	}
 
-	.sponsor-text {
+	.spr-text {
 		margin-top: -270px;
 		font-size: 20px;
 	}

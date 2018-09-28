@@ -81,10 +81,10 @@
 		    var docViewTop = $window.scrollTop();
 		    var docViewBottom = docViewTop + $window.height();
 
-		    var elemTop = $elem.offset().top;
-		    var elemBottom = elemTop + $elem.height();
+			var elemTop = $elem.offset().top;
+			var elemBottom = elemTop + $elem.height();
 
-		    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+			return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
 		}
 
 		window.onscroll = function() {
@@ -147,7 +147,7 @@
 				$('#nav-schedule').removeClass('active');
 			}
 
-			if(isScrolledIntoView(".sponsor-text")) {
+			if(isScrolledIntoView(".spr-text")) {
 				$('#nav-rules').removeClass('active');
 				$('#nav-sponsors').addClass('active');
 				$('#nav-home').removeClass('active');
@@ -427,7 +427,8 @@
 				</table>
 			</div>
 		</div>
-	<div class="placeholder" id="rules"></div>
+
+		<div class="placeholder" id="rules"></div>
 		<div class="rules">
 			<div class="rules-header">RULES</div>
 			<div class="rule-container">
@@ -465,14 +466,14 @@
 
 		</div>
 
- 	<div class="placeholder" id="sponsors"></div>
+ 		<div class="placeholder" id="sponsors"></div>
 		<div class="sponsor-container">
 			<div class="sponsor-img-container">
 				<div class="sponsor-img"></div>
 			</div>				
 			
 			<div class="sponsor-header">SPONSORS</div>
-			<div class="sponsor-text" style="display:inline-block!important"><i>
+			<div class="spr-text" style="display:inline-block!important"><i>
 			
 			Interested in sponsoring Chezy Champs? Contact us at <script>document.write('<'+'a'+' '+'h'+'r'+'e'+'f'+'='+"'"+'m'+'a'+'&'+'#'+'1'+'0'+'5'+';'+'l'+'t'+'o'+'&'+'#'+'5'+'8'+';'+'&'+'#'+'9'+'9'+';'+'h'+'e'+'z'+'%'+'7'+'9'+'c'+'h'+'%'+'6'+'1'+'m'+'p'+'s'+'&'+'#'+'6'+'4'+';'+'t'+'%'+'6'+'5'+'&'+'#'+'9'+'7'+';'+'m'+'&'+'#'+'5'+'0'+';'+'%'+'3'+'5'+'&'+'#'+'5'+'2'+';'+'%'+'2'+'&'+'#'+'6'+'9'+';'+'%'+'6'+'3'+'o'+'%'+'&'+'#'+'5'+'4'+';'+'D'+"'"+'>'+'c'+'&'+'#'+'1'+'0'+'4'+';'+'e'+'z'+'y'+'&'+'#'+'9'+'9'+';'+'h'+'a'+'m'+'p'+'s'+'&'+'#'+'6'+'4'+';'+'t'+'&'+'#'+'1'+'0'+'1'+';'+'&'+'#'+'9'+'7'+';'+'m'+'&'+'#'+'5'+'0'+';'+'&'+'#'+'5'+'3'+';'+'4'+'&'+'#'+'4'+'6'+';'+'&'+'#'+'9'+'9'+';'+'o'+'m'+'<'+'/'+'a'+'>');</script><noscript>[Turn on JavaScript to see the email address]</noscript></i></div>
 			
@@ -518,6 +519,7 @@
 					</div>
 				</div>
 			</div>
+		</div>
 			<!-- <div class="sponsor-row" style="margin-bottom: 3%;">
 				<div class="sponsor-column for-sponsor-picture" style="background: #fff;">
 					<img src="files/sponsors/vexpro.png" width="60%" style="margin-top: 8%;">
