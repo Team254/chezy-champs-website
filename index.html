@@ -93,7 +93,7 @@
 
 		function handleScroll() {
 			if(isScrolledIntoView(".header-text")) {
-				// $('#nav-rules').removeClass('active');
+				$('#nav-rules').removeClass('active');
 				$('#nav-home').addClass('active');
 				$('#nav-about').removeClass('active');
 				$('#nav-info').removeClass('active');
@@ -104,7 +104,7 @@
 			}
 
 			if(isScrolledIntoView(".about-text")) {
-				// $('#nav-rules').removeClass('active');
+				$('#nav-rules').removeClass('active');
 				$('#nav-about').addClass('active');
 				$('#nav-home').removeClass('active');
 				$('#nav-info').removeClass('active');
@@ -115,7 +115,7 @@
 			}
 
 			if(isScrolledIntoView(".info-text")) {
-				// $('#nav-rules').removeClass('active');
+				$('#nav-rules').removeClass('active');
 				$('#nav-info').addClass('active');
 				$('#nav-home').removeClass('active');
 				$('#nav-about').removeClass('active');
@@ -126,7 +126,7 @@
 			}
 
 			if(isScrolledIntoView(".schedule-text")) {
-				// $('#nav-rules').removeClass('active');
+				$('#nav-rules').removeClass('active');
 				$('#nav-info').removeClass('active');
 				$('#nav-schedule').addClass('active');
 				$('#nav-home').removeClass('active');
@@ -136,16 +136,16 @@
 				$('#nav-map').removeClass('active');
 			}
 
-			// if(isScrolledIntoView(".rules-header")) {
-			// 	$('#nav-rules').addClass('active');
-			// 	$('#nav-info').removeClass('active');
-			// 	$('#nav-home').removeClass('active');
-			// 	$('#nav-about').removeClass('active');
-			// 	$('#nav-sponsors').removeClass('active');
-			// 	$('#nav-map').removeClass('active');
-			// 	// $('#nav-webcast').removeClass('active');
-			// 	$('#nav-schedule').removeClass('active');
-			// }
+			if(isScrolledIntoView(".rules-header")) {
+				$('#nav-rules').addClass('active');
+				$('#nav-info').removeClass('active');
+				$('#nav-home').removeClass('active');
+				$('#nav-about').removeClass('active');
+				$('#nav-sponsors').removeClass('active');
+				$('#nav-map').removeClass('active');
+				// $('#nav-webcast').removeClass('active');
+				$('#nav-schedule').removeClass('active');
+			}
 
 			// if(isScrolledIntoView(".spr-text")) {
 			// 	$('#nav-rules').removeClass('active');
@@ -159,7 +159,7 @@
 			// }
 
 			if(isScrolledIntoView(".map-text")) {
-				// $('#nav-rules').removeClass('active');
+				$('#nav-rules').removeClass('active');
 				// $('#nav-sponsors').removeClass('active');
 				$('#nav-home').removeClass('active');
 				$('#nav-info').removeClass('active');
@@ -228,7 +228,7 @@
 		        <li id="nav-info"><a href="#info">INFORMATION</a></li>
 		        <li id="nav-map"><a href="#map">MAP</a></li>
 		        <li id="nav-schedule"><a href="#schedule">SCHEDULE</a></li>
-		        <!-- <li id="nav-rules"><a href="#rules">RULES</a></li> -->
+		        <li id="nav-rules"><a href="#rules">RULES</a></li>
 		        <!-- <li id="nav-sponsors"><a href="#sponsors">SPONSORS</a></li> -->
 		        <!-- <li id="nav-webcast"><a href="#webcast">SWAG</a></li> -->
 		        <!-- <li id="nav-webcast"><a href="#webcast">WEBCAST</a></li> -->
@@ -428,31 +428,68 @@
 			</div>
 		</div>
 
-		<!-- <div class="placeholder" id="rules"></div>
+		<div class="placeholder" id="rules"></div>
 		<div class="rules">
 			<div class="rules-header">RULES</div>
 			<div class="rule-container">
 				<div class="deadlift">
-					<img src="https://media.team254.com/2018/03/965407da-2018-Team-254-Robot.jpg">
+					<img src="https://media.team254.com/2019/03/953c07cc-backlash-600..jpg">
 				</div>
 
 				<div class="rule-changes">
-					<p style="display:block"><b>Chezy Champs will be played under the  <a href='http://frclinks.com/d'>FIRST Power Up rules</a> with the following modifications:</b></p>
+					<p style="display:block"><b>Chezy Champs will be played under the  <a href='http://frclinks.com/d'>FIRST Destination: Deep Space rules</a> with the following modifications:</b></p>
+
 					<p style="display:block"><b>Inspection</b></p>
 					<p>There will be no robot inspections conducted, and teams are allowed an extra five (5) pounds weight for repairs and minor modifications. Event organizers may conduct ad-hoc inspections at any time; violations identified must be corrected before the robot can participate in subsequent matches, and teams may be retroactively disqualified from past matches for egregious violations that resulted in a competitive advantage.</p>
-					<p style="display:block"><b>Gameplay</b> (changes to existing rules are underlined)</p>
-					<p>In general, minor violations of game rules that, in the best judgement of the REFEREES, meet ALL of the below conditions, will not be penalized:</p>
+
+					<p style="display:block"><b>Gameplay</b> (changes to existing rules are <u>underlined</u>; deletions are <strike>crossed out</strike>.)</p>
+
+					<p><u>In general, minor violations of game rules that, in the best judgement of the REFEREES, meet ALL of the below conditions, will not be penalized:</p>
 					<ol>
 						<li>Are accidental</li>
 						<li>Do not pose a safety hazard</li>
 						<li>Do not change the difficulty of the game for either alliance</li>
 					</ol>
-					<p><b><u>G09. Launching POWER CUBES is okay.</b> Robots may launch power cubes without restriction, so long as doing so would not also violate S01, G20, G21, G24, or G25.</u></p>
-					<p><b>G22. One POWER CUBE per ROBOT.</b> ROBOTS may not control more than one (1) POWER CUBE at a time, <u>except when breaking the plane of their own EXCHANGE ZONE.</u></p>
-					<p><b>G25. PLATES are moved by POWER CUBES, not ROBOTS.</b> Except via the weight of placed POWER CUBES, ROBOTS may not directly or transitively cause or prevent the movement of PLATES <u>to their ALLIANCE's advantage.</u> Movement, or prevention of movement, of PLATES because of momentary ROBOT action resulting in minimal PLATE displacement is not a violation of this rule. A ROBOT forced to affect the position of a PLATE because of contact by an opponent ROBOT either directly or transitively through a POWER CUBE or other ROBOT (e.g. a ROBOT wedged underneath the SCALE by the opposing ALLIANCE either intentionally or accidentally) is not a violation of this rule.</p>
-					<p><b>A04. Stay out of your opponent's side of the FIELD.</b> During AUTO, no part of a ROBOT'S BUMPERS may pass from the NULL TERRITORY to the opponent's side of the FIELD. Violation: FOUL. If contact is made with an opponent ROBOT in their side of the FIELD (either direct contact or transitive contact through a POWER CUBE), TECH FOUL <u>and YELLOW CARD. If the contact prevents the opponent ALLIANCE from achieving the AUTO QUEST, the associated Ranking Point will be granted automatically.</u></p>
+					</u>
+
+					<p><b>G5. Don’t mess with opponents’ scored GAME PIECES.</b> A ROBOT may not remove a GAME PIECE from an opponents’ ROCKET/CARGO SHIP. <u>Precariously-placed</u> GAME PIECES (<u>e.g. HATCH PANELS having full hook-and-loop engagement on only one side</u>) which become dislodged because of incidental contact with the ROCKET/CARGO SHIP are not considered a violation of this rule.</p>
+
+					<p><b>G6. <u>It’s okay for ROBOTS to throw HATCH PANELS.</b> ROBOTS may shoot HATCH PANELS without restriction, so long as doing so would not violate S1, G5, G7, G8, or G20 (in which case the penalties from those rules would apply)</u>. <strike><b>No throwing HATCH PANELS.</b> ROBOTS may not shoot HATCH PANELS into the air in a way that’s prohibited in R6, kick them across the floor using an active MECHANISM, or eject them across the floor in a forceful way (i.e. HATCH PANEL is caused to move a significant distance).</strike></p>
+
+					<p><b>G9. One (1) defender at a time.</b> No more than one ROBOT may be positioned such that its BUMPERS <strike>break the plane defined by or</strike> are completely beyond the opponent’s CARGO SHIP LINE.</p>
+					<p>The exception to this rule is if an additional ROBOT</p>
+					<ol>
+						<li>is forced to cross the opponent’s CARGO SHIP LINE by an opponent ROBOT (e.g. it is pushed over the opponent’s CARGO SHIP LINE by an opponent in a defensive effort to prevent them from scoring a CARGO in a ROCKET), and</li>
+						<li>makes a dedicated effort to cross back over the CARGO SHIP LINE until no more than one ROBOT is positioned such that its BUMPERS break the plane defined by or are completely beyond the opponent’s CARGO SHIP LINE.</li>
+					</ol>
+
+					<p><b>G11. <u>Throwing CARGO on defense is okay.</b> Robots may propel CARGO without restriction, so long as doing so would not violate S1, G5, G7, G8, G10, or G20 (in which case the penalties from those rules would apply).</u> <strike><b>No throwing CARGO on defense.</b> A ROBOT with its BUMPERS breaking the plane defined by or completely beyond the opponent’s CARGO SHIP LINE may not shoot CARGO into the air, kick it across the floor using an active MECHANISM, or eject it across the floor in a forceful way (i.e. CARGO is propelled a significant distance).</strike></p>
+
+					<p><b>G12. <u>Stay out of the ALLIANCE STATIONS</u> <strike>Duck in the HAB ZONES.</strike></b> A ROBOT <strike>with its BUMPERS fully in either HAB ZONE</strike> may not <u>break the vertical plane</u> <strike>extend</strike> above the ALLIANCE STATION WALL <u>or damage the SANDSTORM</u>, <strike>i.e. more than 6 ft. 6 in. (~198 cm) above the carpet.</strike></p>
+					
+					<p><strike><b>R6.</b> A ROBOT may not be designed to shoot a HATCH PANEL such that it travels more than 3 horizontal ft. (~91 cm) beyond its FRAME PERIMETER (reference G6).</strike></p>
+
+					<p><b>Complete ROCKET Ranking Point:</b> Awarded <u>if, for each of the three (3) ROCKET levels, at least one (1) of the ALLIANCE’S ROCKETS has two (2) scored HATCH PANELS and two (2) scored CARGO at that level</u> <strike>for completing at least one (1) ROCKET with six (6) scored HATCH PANELS and six (6) scored CARGO.</strike></p>
+
+					<p><b>HAB Docking Ranking Point:</b> Awarded for earning at least <u>eighteen (18)</u> <strike>fifteen (15)</strike> HAB Climb Bonus points.</p>
+
+					<p><b>Section 5.3 on assessing HAB Climb Bonuses:</b><br />
+					For the purposes of assessing SANDSTORM and HAB Climb Bonuses described in Table 5-1, a ROBOT is considered to have started from, or climbed to, a HAB Level if:</p>
+					<ol>
+				    <li>the ROBOT’S BUMPERS are fully above the Level’s platform and</li>
+				    <li>the ROBOT is only supported by:
+				    	<ul>
+				        <li>surfaces of the HAB PLATFORM at or above that Level (including transitively through a GAME PIECE),</li>
+				        <li>ALLIANCE WALL, and/or</li>
+				        <li>another ROBOT which has climbed to that HAB Level or higher</li>
+				    </ul>
+				    </li>
+					</ol>
+
+					<p><u>For the purpose of determining HAB Level at the end of the match, a ROBOT is not considered to be supported by a GAME PIECE or another ROBOT if, in the estimation of the REFEREES, the absence of the support would not change the Level that the ROBOT would otherwise be considered to have climbed to.</u></p>
+
 					<p><b>Alliance Selection</b></p>
-					<p>Chezy Champs will use four-team playoff alliances. All rules governing their selection and operation will be identical to those for Championship playoff alliances in section 10.11.1 in the official manual.</p>
+					<p>Chezy Champs will use four-team playoff alliances. All rules governing their selection and operation will be identical to those for Championship playoff alliances in section 12.10.1 in the official manual.</p>
 					
 				</div>
 				<div class="rule-holder">
@@ -464,7 +501,7 @@
 
 			</div>
 
-		</div> -->
+		</div>
 
  		<!-- <div class="placeholder" id="sponsors"></div>
 		<div class="sponsor-container">
