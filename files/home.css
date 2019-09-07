@@ -408,7 +408,7 @@
 .footer {
 	width: 100%;
 	background-color: #222;
-	padding: 80px;
+	padding: 20px;
 }
 
 .social-container {
@@ -452,7 +452,6 @@
 .footer-links {
 	width: 100%;
 	text-align: center;
-	margin-top: 60px;
 }
  
 .footer-link {
