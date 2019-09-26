@@ -97,8 +97,8 @@
 				$('#nav-home').addClass('active');
 				$('#nav-about').removeClass('active');
 				$('#nav-info').removeClass('active');
-				// $('#nav-sponsors').removeClass('active');
-				// $('#nav-webcast').removeClass('active');
+				$('#nav-sponsors').removeClass('active');
+				$('#nav-webcast').removeClass('active');
 				$('#nav-schedule').removeClass('active');
 				$('#nav-map').removeClass('active');
 			}
@@ -108,8 +108,8 @@
 				$('#nav-about').addClass('active');
 				$('#nav-home').removeClass('active');
 				$('#nav-info').removeClass('active');
-				// $('#nav-sponsors').removeClass('active');
-				// $('#nav-webcast').removeClass('active');
+				$('#nav-sponsors').removeClass('active');
+				$('#nav-webcast').removeClass('active');
 				$('#nav-schedule').removeClass('active');
 				$('#nav-map').removeClass('active');
 			}
@@ -119,8 +119,8 @@
 				$('#nav-info').addClass('active');
 				$('#nav-home').removeClass('active');
 				$('#nav-about').removeClass('active');
-				// $('#nav-sponsors').removeClass('active');
-				// $('#nav-webcast').removeClass('active');
+				$('#nav-sponsors').removeClass('active');
+				$('#nav-webcast').removeClass('active');
 				$('#nav-schedule').removeClass('active');
 				$('#nav-map').removeClass('active');
 			}
@@ -131,8 +131,8 @@
 				$('#nav-schedule').addClass('active');
 				$('#nav-home').removeClass('active');
 				$('#nav-about').removeClass('active');
-				// $('#nav-sponsors').removeClass('active');
-				// $('#nav-webcast').removeClass('active');
+				$('#nav-sponsors').removeClass('active');
+				$('#nav-webcast').removeClass('active');
 				$('#nav-map').removeClass('active');
 			}
 
@@ -143,42 +143,42 @@
 				$('#nav-about').removeClass('active');
 				$('#nav-sponsors').removeClass('active');
 				$('#nav-map').removeClass('active');
-				// $('#nav-webcast').removeClass('active');
+				$('#nav-webcast').removeClass('active');
 				$('#nav-schedule').removeClass('active');
 			}
 
-			// if(isScrolledIntoView(".spr-text")) {
-			// 	$('#nav-rules').removeClass('active');
-			// 	$('#nav-sponsors').addClass('active');
-			// 	$('#nav-home').removeClass('active');
-			// 	$('#nav-info').removeClass('active');
-			// 	$('#nav-about').removeClass('active');
-			// 	$('#nav-webcast').removeClass('active');
-			// 	$('#nav-map').removeClass('active');
-			// 	$('#nav-schedule').removeClass('active');
-			// }
-
-			if(isScrolledIntoView(".map-text")) {
+			if(isScrolledIntoView(".spr-text")) {
 				$('#nav-rules').removeClass('active');
-				// $('#nav-sponsors').removeClass('active');
+				$('#nav-sponsors').addClass('active');
 				$('#nav-home').removeClass('active');
 				$('#nav-info').removeClass('active');
 				$('#nav-about').removeClass('active');
-				// $('#nav-webcast').removeClass('active');
+				$('#nav-webcast').removeClass('active');
+				$('#nav-map').removeClass('active');
+				$('#nav-schedule').removeClass('active');
+			}
+
+			if(isScrolledIntoView(".map-text")) {
+				$('#nav-rules').removeClass('active');
+				$('#nav-sponsors').removeClass('active');
+				$('#nav-home').removeClass('active');
+				$('#nav-info').removeClass('active');
+				$('#nav-about').removeClass('active');
+				$('#nav-webcast').removeClass('active');
 				$('#nav-schedule').removeClass('active');
 				$('#nav-map').addClass('active');
 			}
 
-			// if(isScrolledIntoView(".webcast-text")) {
-			// 	$('#nav-rules').removeClass('active');
-			// 	$('#nav-sponsors').removeClass('active');
-			// 	$('#nav-home').removeClass('active');
-			// 	$('#nav-info').removeClass('active');
-			// 	$('#nav-about').removeClass('active');
-			// 	$('#nav-webcast').addClass('active');
-			// 	$('#nav-map').removeClass('active');
-			// 	$('#nav-schedule').removeClass('active');
-			// }
+			if(isScrolledIntoView(".webcast-text")) {
+				$('#nav-rules').removeClass('active');
+				$('#nav-sponsors').removeClass('active');
+				$('#nav-home').removeClass('active');
+				$('#nav-info').removeClass('active');
+				$('#nav-about').removeClass('active');
+				$('#nav-webcast').addClass('active');
+				$('#nav-map').removeClass('active');
+				$('#nav-schedule').removeClass('active');
+			}
 
 			if(window.mobileAndTabletcheck) {
 
@@ -229,9 +229,8 @@
 		        <li id="nav-map"><a href="#map">MAP</a></li>
 		        <li id="nav-schedule"><a href="#schedule">SCHEDULE</a></li>
 		        <li id="nav-rules"><a href="#rules">RULES</a></li>
-		        <!-- <li id="nav-sponsors"><a href="#sponsors">SPONSORS</a></li> -->
-		        <!-- <li id="nav-webcast"><a href="#webcast">SWAG</a></li> -->
-		        <!-- <li id="nav-webcast"><a href="#webcast">WEBCAST</a></li> -->
+		        <li id="nav-sponsors"><a href="#sponsors">SPONSORS</a></li>
+		        <li id="nav-webcast"><a href="#webcast">WEBCAST</a></li>
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
@@ -259,7 +258,7 @@
 				<em>Chezy Champs is free and open to the public.</em>
 			</div>
 			<div class="badge-container">
-				<div class="badge-icon"><p class="number">42</p><p class="text">Teams</p></div>
+				<div class="badge-icon"><p class="number">40</p><p class="text">Teams</p></div>
 				<div class="badge-icon"><p class="number">2</p><p class="text">Days</p></div>
 			</div>
 			<div class="about-text">
@@ -503,7 +502,7 @@
 
 		</div>
 
- 		<!-- <div class="placeholder" id="sponsors"></div>
+ 		<div class="placeholder" id="sponsors"></div>
 		<div class="sponsor-container">
 			<div class="sponsor-img-container">
 				<div class="sponsor-img"></div>
@@ -517,7 +516,7 @@
 			
 
 			
-			<div class="sponsor-row taller">
+<!-- 			<div class="sponsor-row taller">
 				<div class="sponsor-column vexpro">
 					<div class="sponsor-logos">
 						<img src="files/vexpro.png" width="80%">
@@ -580,7 +579,7 @@
 					margin: auto;
 					width: 90%;
 				}
-			</style>
+			</style> -->
 			<div class="sponsor-row" style="margin-bottom: 3%;">
 				<div class="sponsor-column for-sponsor-picture" style="background: #fff;">
 					<img src="files/sponsors/Lockheed_Martin.svg" width="80%" style="margin-top: 15%;">
@@ -596,10 +595,10 @@
 					</div>	
 				</div>
 			</div>
-		</div> -->
+		</div>
 
 
-		<!-- <div class="placeholder" id="webcast"></div>
+		<div class="placeholder" id="webcast"></div>
 		<div class="webcast"> -->
 			<!-- <div class="webcast-header">SWAG</div>
 			
@@ -611,7 +610,7 @@
 				<a href='https://www.bcp.org/calendars/events.aspx?action=ShowEventRegistrationForm&EventId=ae8e29e0-68bb-4405-be37-67c9307405f9&CurrentModuleId=576&CurrentParentModuleId=575' target=_blank><img src='https://media.team254.com/2017/08/CC-Shirt.svg' width='100%'></a>
 			</div> -->
 
-<!-- 
+
 			<div class="webcast-header">WEBCAST</div>
 			<iframe id="stream" src="https://player.twitch.tv/?channel=254chezychamps" frameborder="0" scrolling="no" height="auto" width="80%" style="margin-left: 10%; margin-top:50px"></iframe>
 			<script type="text/javascript">
@@ -619,15 +618,15 @@
 			</script>
 			<div class="webcast-text">
 				Chezy Champs will be livestreamed on this page.  Check back on September 29th and 30th to watch!
-			</div> -->
+			</div> 
 
-<!-- 
+
 
 			<div id="countdown" class="webcast-timer"></div>
 
 			<script type="text/javascript">
 				// set the date we're counting down to
-				var target_date = new Date("Sep 16, 2017").getTime();
+				var target_date = new Date("Sep 28, 2019").getTime();
 				 
 				// variables for time units
 				var days, hours, minutes, seconds;
@@ -659,9 +658,10 @@
 				}, 1000);
 
 
-			</script>	 -->
-		<!-- </div>  -->
+			</script>	 
+		 </div>  
  
+
 
 		
 
@@ -672,16 +672,16 @@
 						<img class="twitter" src="https://media.team254.com/web/chezy-champs/twitter.png" width="30px">
 					</div>
 				</a> -->
-				<!-- <a href="https://www.facebook.com/team254robotics">
+				<a href="https://www.facebook.com/team254robotics">
 					<div class="social-btn" style="padding-top:11px">
 						<img class="facebook" src="https://media.team254.com/web/chezy-champs/facebook.png" height="30px">
 					</div>
-				</a> -->
-				<!-- <a href="http://www.thebluealliance.com/event/2017cc">
+				</a>
+				<a href="http://www.thebluealliance.com/event/2019cc">
 					<div class="social-btn" style="padding-top:11px">
 						<img class="blue-alliance" src="https://media.team254.com/web/chezy-champs/bluealliance.png" height="30px">
 					</div>
-				</a> -->
+				</a>
 			</div>
 
 			<div class="footer-links">
