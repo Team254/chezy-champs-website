@@ -451,6 +451,13 @@
 
 .footer-links {
 	width: 100%;
+	display: flex;   
+	padding: 0 1%;
+}
+
+.footer-link-a {
+	flex: 1; 
+	margin: 0 1%;
 	text-align: center;
 }
  
