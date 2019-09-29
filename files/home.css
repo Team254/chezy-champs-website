@@ -857,7 +857,7 @@
 
 }
 
-@media (max-device-width: 600px) {
+@media (max-width: 600px) {
 	.navbar-nav {
 		font-family: 'Open Sans Light', sans-serif; 
 		font-size: 23px;
@@ -1136,6 +1136,10 @@
 		display: none;
 	}
 
+	.sponsor-row {
+		margin-bottom: 3%;
+	}
+
 	.sponsor-column {
 		width: 100%;
 	}
@@ -1312,7 +1316,7 @@
 	}
 
 	.sponsor-row {
-		height: 520px;
+		height: 450px;
 	}
 
 	.button-border {
