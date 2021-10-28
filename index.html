@@ -169,16 +169,16 @@
 				$('#nav-map').addClass('active');
 			}
 
-			// if(isScrolledIntoView(".webcast-text")) {
-			// 	$('#nav-rules').removeClass('active');
-			// 	$('#nav-sponsors').removeClass('active');
-			// 	$('#nav-home').removeClass('active');
-			// 	$('#nav-info').removeClass('active');
-			// 	$('#nav-about').removeClass('active');
-			// 	$('#nav-webcast').addClass('active');
-			// 	$('#nav-map').removeClass('active');
-			// 	$('#nav-schedule').removeClass('active');
-			// }
+			if(isScrolledIntoView(".webcast-text")) {
+				$('#nav-rules').removeClass('active');
+				$('#nav-sponsors').removeClass('active');
+				$('#nav-home').removeClass('active');
+				$('#nav-info').removeClass('active');
+				$('#nav-about').removeClass('active');
+				$('#nav-webcast').addClass('active');
+				$('#nav-map').removeClass('active');
+				$('#nav-schedule').removeClass('active');
+			}
 
 			if(window.mobileAndTabletcheck) {
 
@@ -230,7 +230,7 @@
 		        <li id="nav-schedule"><a href="#schedule">SCHEDULE</a></li>
 		        <li id="nav-rules"><a href="#rules">RULES</a></li>
 		        <li id="nav-sponsors"><a href="#sponsors">SPONSORS</a></li>
-		        <!-- <li id="nav-webcast"><a href="#webcast">WEBCAST</a></li> -->
+		        <li id="nav-webcast"><a href="#webcast">WEBCAST</a></li>
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
@@ -554,10 +554,10 @@
 		</div> -->
 
 
-		<!-- <div class="placeholder" id="webcast"></div>
+		<div class="placeholder" id="webcast"></div>
 		<div class="webcast">
 			<div class="webcast-header">WEBCAST</div>
-			<iframe id="stream" src="https://player.twitch.tv/?channel=254chezychamps" frameborder="0" scrolling="no" height="auto" width="80%" style="margin-left: 10%; margin-top:50px"></iframe>
+			<iframe id="stream" src="https://player.twitch.tv/?channel=robosportsnetwork&parent=chezychamps.com" frameborder="0" scrolling="no" height="auto" width="80%" style="margin-left: 10%; margin-top:50px"></iframe>
 			<script type="text/javascript">
 				$("#stream").height($("#stream").width()*9/16);
 			</script>
@@ -607,7 +607,7 @@
 
 
 			</script>	 
-		 </div>   -->
+		 </div>
  
 
 
