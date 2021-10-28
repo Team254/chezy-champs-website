@@ -98,7 +98,7 @@
 				$('#nav-about').removeClass('active');
 				$('#nav-info').removeClass('active');
 				$('#nav-sponsors').removeClass('active');
-				// $('#nav-webcast').removeClass('active');
+				$('#nav-webcast').removeClass('active');
 				$('#nav-schedule').removeClass('active');
 				$('#nav-map').removeClass('active');
 			}
@@ -109,7 +109,7 @@
 				$('#nav-home').removeClass('active');
 				$('#nav-info').removeClass('active');
 				$('#nav-sponsors').removeClass('active');
-				// $('#nav-webcast').removeClass('active');
+				$('#nav-webcast').removeClass('active');
 				$('#nav-schedule').removeClass('active');
 				$('#nav-map').removeClass('active');
 			}
@@ -120,7 +120,7 @@
 				$('#nav-home').removeClass('active');
 				$('#nav-about').removeClass('active');
 				$('#nav-sponsors').removeClass('active');
-				// $('#nav-webcast').removeClass('active');
+				$('#nav-webcast'.)removeClass('active');
 				$('#nav-schedule').removeClass('active');
 				$('#nav-map').removeClass('active');
 			}
@@ -132,7 +132,7 @@
 				$('#nav-home').removeClass('active');
 				$('#nav-about').removeClass('active');
 				$('#nav-sponsors').removeClass('active');
-				// $('#nav-webcast').removeClass('active');
+				$('#nav-webcast').removeClass('active');
 				$('#nav-map').removeClass('active');
 			}
 
@@ -143,7 +143,7 @@
 				$('#nav-about').removeClass('active');
 				$('#nav-sponsors').removeClass('active');
 				$('#nav-map').removeClass('active');
-				// $('#nav-webcast').removeClass('active');
+				$('#nav-webcast').removeClass('active');
 				$('#nav-schedule').removeClass('active');
 			}
 
@@ -153,7 +153,7 @@
 				$('#nav-home').removeClass('active');
 				$('#nav-info').removeClass('active');
 				$('#nav-about').removeClass('active');
-				// $('#nav-webcast').removeClass('active');
+				$('#nav-webcast').removeClass('active');
 				$('#nav-map').removeClass('active');
 				$('#nav-schedule').removeClass('active');
 			}
@@ -164,7 +164,7 @@
 				$('#nav-home').removeClass('active');
 				$('#nav-info').removeClass('active');
 				$('#nav-about').removeClass('active');
-				// $('#nav-webcast').removeClass('active');
+				$('#nav-webcast').removeClass('active');
 				$('#nav-schedule').removeClass('active');
 				$('#nav-map').addClass('active');
 			}
@@ -562,51 +562,9 @@
 				$("#stream").height($("#stream").width()*9/16);
 			</script>
 			<div class="webcast-text">
-				Chezy Champs will be livestreamed on this page.  Check back on September 29th and 30th to watch!
+				Chezy Champs will be livestreamed on this page.  Check back on October 30th and 31st to watch!
 			</div> 
 
-
-
-			<div id="countdown" class="webcast-timer"></div>
-
-			<script type="text/javascript">
-				// set the date we're counting down to
-				var target_date = new Date(Date.UTC(2019, 8, 29, 15, 30, 00, 00)).getTime();
-				 
-				// variables for time units
-				var days, hours, minutes, seconds;
-				 
-				// get tag element
-				var countdown = document.getElementById("countdown");
-				 
-				// update the tag with id "countdown" every 1 second
-				setInterval(function () {
-				 
-				    // find the amount of "seconds" between now and target
-				    var current_date = new Date().getTime();
-				    var seconds_left = (target_date - current_date) / 1000;
-
-					if (seconds_left > 0) {
-						// do some time calculations
-						days = parseInt(seconds_left / 86400);
-						seconds_left = seconds_left % 86400;
-						
-						hours = parseInt(seconds_left / 3600);
-						seconds_left = seconds_left % 3600;
-						
-						minutes = parseInt(seconds_left / 60);
-						seconds = parseInt(seconds_left % 60);
-						
-						// format countdown string + set tag value
-						countdown.innerHTML = days + "d " + hours + "h "
-						+ minutes + "m " + seconds + "s"; 
-					} else {
-						countdown.innerHTML = ""; 
-					}
-				}, 1000);
-
-
-			</script>	 
 		 </div>
  
 
@@ -614,28 +572,11 @@
 		
 
 		<div class="footer">
-			<!-- <div class="social-container">
-				<a href="https://twitter.com/chezychamps">
-					<div class="social-btn">
-						<img class="twitter" src="https://media.team254.com/web/chezy-champs/twitter.png" width="30px">
-					</div>
-				</a>
-				<a href="https://www.facebook.com/team254robotics">
-					<div class="social-btn" style="padding-top:11px">
-						<img class="facebook" src="https://media.team254.com/web/chezy-champs/facebook.png" height="30px">
-					</div>
-				</a>
-				<a href="http://www.thebluealliance.com/event/2019cc">
-					<div class="social-btn" style="padding-top:11px">
-						<img class="blue-alliance" src="https://media.team254.com/web/chezy-champs/bluealliance.png" height="30px">
-					</div>
-				</a>
-			</div> -->
 
 			<div class="footer-links" style="margin: auto;">
 				<a href="https://www.facebook.com/team254robotics" class="footer-link-a" target="_blank"><span class="footer-link">FACEBOOK</span></a>
 				<a href="https://www.thebluealliance.com/event/2021cc" class="footer-link-a" target="_blank"><span class="footer-link">TBA</span></a>
-				<a href="https://www.twitch.tv/254chezychamps" class="footer-link-a" target="_blank"><span class="footer-link">TWITCH</span></a>
+				<a href="https://www.twitch.tv/robosportsnetwork" class="footer-link-a" target="_blank"><span class="footer-link">TWITCH</span></a>
 				<a href="https://www.youtube.com/channel/UCKqzB6PVkWvtrGUWl0nv4gQ" class="footer-link-a" target="_blank"><span class="footer-link">YOUTUBE</span></a>
 				<a href="https://www.chiefdelphi.com/t/chezy-champs-2021/395143" class="footer-link-a" target="_blank"><span class="footer-link">CD</span></a>
 				<a href="http://www.team254.com" class="footer-link-a" target="_blank"><span class="footer-link">TEAM 254</span></a>
